@@ -1,0 +1,274 @@
+/* 3D Clay Figurine with Paint Drip Effects */
+
+/* Paint Drip Keyframes */
+@keyframes drip-1 {
+  0%, 100% { transform: translateY(0) scaleY(1); }
+  50% { transform: translateY(2px) scaleY(1.1); }
+}
+
+@keyframes drip-2 {
+  0%, 100% { transform: translateY(0) scaleY(1); }
+  60% { transform: translateY(3px) scaleY(1.15); }
+}
+
+@keyframes drip-wobble {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1px); }
+  75% { transform: translateX(1px); }
+}
+
+/* Enhanced 3D Button Drips - Light Theme */
+.clay-light-button-primary,
+.clay-light-button-secondary,
+.clay-light-button-accent,
+.clay-light-button-ghost {
+  overflow: visible !important;
+}
+
+.clay-light-button-primary::before,
+.clay-light-button-secondary::before,
+.clay-light-button-accent::before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 20%;
+  width: 6px;
+  height: 12px;
+  background: inherit;
+  border-radius: 0 0 50% 50%;
+  filter: blur(0.5px);
+  opacity: 0.7;
+  animation: drip-1 4s ease-in-out infinite;
+  z-index: -1;
+}
+
+.clay-light-button-primary::after,
+.clay-light-button-secondary::after,
+.clay-light-button-accent::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  right: 25%;
+  width: 5px;
+  height: 10px;
+  background: inherit;
+  border-radius: 0 0 50% 50%;
+  filter: blur(0.5px);
+  opacity: 0.6;
+  animation: drip-2 5s ease-in-out infinite 1s;
+  z-index: -1;
+}
+
+/* Paint Drip for Badges */
+.clay-light-badge-purple,
+.clay-light-badge-pink,
+.clay-light-badge-blue,
+.clay-light-badge-cyan,
+.clay-light-badge-violet {
+  overflow: visible !important;
+  position: relative;
+}
+
+.clay-light-badge-purple::after,
+.clay-light-badge-pink::after,
+.clay-light-badge-blue::after,
+.clay-light-badge-cyan::after,
+.clay-light-badge-violet::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 30%;
+  width: 4px;
+  height: 8px;
+  background: inherit;
+  border-radius: 0 0 50% 50%;
+  filter: blur(0.3px);
+  opacity: 0.6;
+  animation: drip-wobble 6s ease-in-out infinite;
+}
+
+/* Enhanced Cards with Sculpted Edges */
+.clay-light-card {
+  box-shadow: 
+    /* Main depth shadow */
+    0 20px 60px rgba(161, 161, 170, 0.25),
+    0 8px 32px rgba(161, 161, 170, 0.15),
+    /* Top highlight */
+    inset 0 4px 8px rgba(255, 255, 255, 1),
+    /* Bottom shadow for depth */
+    inset 0 -6px 16px rgba(161, 161, 170, 0.2),
+    /* Left sculpted edge */
+    inset -4px 0 12px rgba(161, 161, 170, 0.15),
+    /* Right sculpted edge */
+    inset 4px 0 12px rgba(255, 255, 255, 0.8),
+    /* Outer glow */
+    0 2px 4px rgba(255, 255, 255, 0.9),
+    /* Deep shadow */
+    0 30px 80px rgba(161, 161, 170, 0.2);
+  transform: translateZ(0);
+}
+
+.clay-light-card:hover {
+  box-shadow: 
+    0 24px 70px rgba(161, 161, 170, 0.3),
+    0 12px 40px rgba(161, 161, 170, 0.2),
+    inset 0 5px 10px rgba(255, 255, 255, 1),
+    inset 0 -8px 20px rgba(161, 161, 170, 0.25),
+    inset -5px 0 15px rgba(161, 161, 170, 0.18),
+    inset 5px 0 15px rgba(255, 255, 255, 0.9),
+    0 3px 6px rgba(255, 255, 255, 1),
+    0 36px 90px rgba(161, 161, 170, 0.25);
+}
+
+/* Input Fields with Sculpted Inset */
+.clay-light-input {
+  box-shadow: 
+    /* Deep inset for pressed clay effect */
+    inset 0 4px 12px rgba(161, 161, 170, 0.2),
+    inset 0 2px 6px rgba(161, 161, 170, 0.15),
+    /* Left edge shadow */
+    inset -3px 0 8px rgba(161, 161, 170, 0.12),
+    /* Right edge highlight */
+    inset 3px 0 8px rgba(255, 255, 255, 0.6),
+    /* Bottom highlight lip */
+    inset 0 -2px 4px rgba(255, 255, 255, 0.8),
+    /* Outer shadow */
+    0 4px 16px rgba(161, 161, 170, 0.08);
+}
+
+.clay-light-input:focus {
+  box-shadow: 
+    inset 0 5px 14px rgba(139, 92, 246, 0.15),
+    inset 0 3px 8px rgba(161, 161, 170, 0.15),
+    inset -3px 0 10px rgba(139, 92, 246, 0.1),
+    inset 3px 0 10px rgba(255, 255, 255, 0.7),
+    inset 0 -2px 4px rgba(255, 255, 255, 0.9),
+    0 0 0 3px rgba(139, 92, 246, 0.15),
+    0 4px 16px rgba(139, 92, 246, 0.2);
+}
+
+/* Toggle with Sculpted Track */
+.clay-light-toggle {
+  box-shadow: 
+    inset 0 4px 12px rgba(161, 161, 170, 0.25),
+    inset 0 2px 6px rgba(161, 161, 170, 0.2),
+    inset -2px 0 6px rgba(161, 161, 170, 0.15),
+    inset 2px 0 6px rgba(255, 255, 255, 0.5),
+    0 2px 8px rgba(161, 161, 170, 0.1);
+}
+
+.clay-light-toggle-checked {
+  box-shadow: 
+    inset 0 4px 12px rgba(88, 28, 135, 0.2),
+    inset 0 2px 6px rgba(139, 92, 246, 0.15),
+    inset -2px 0 8px rgba(139, 92, 246, 0.12),
+    inset 2px 0 8px rgba(255, 255, 255, 0.4),
+    0 2px 8px rgba(139, 92, 246, 0.25),
+    0 4px 16px rgba(167, 139, 250, 0.25),
+    0 0 20px rgba(139, 92, 246, 0.15);
+}
+
+.clay-light-toggle-thumb {
+  box-shadow: 
+    /* Main shadow */
+    0 4px 12px rgba(161, 161, 170, 0.3),
+    0 2px 6px rgba(161, 161, 170, 0.2),
+    /* Top highlight */
+    inset 0 2px 4px rgba(255, 255, 255, 1),
+    /* Bottom depth */
+    inset 0 -1px 3px rgba(161, 161, 170, 0.15),
+    /* Side sculpting */
+    inset -1px 0 2px rgba(161, 161, 170, 0.1),
+    inset 1px 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.clay-light-toggle-thumb-checked {
+  box-shadow: 
+    0 4px 14px rgba(88, 28, 135, 0.3),
+    0 2px 8px rgba(139, 92, 246, 0.25),
+    inset 0 2px 4px rgba(255, 255, 255, 1),
+    inset 0 -1px 3px rgba(139, 92, 246, 0.15),
+    inset -1px 0 2px rgba(139, 92, 246, 0.1),
+    inset 1px 0 2px rgba(255, 255, 255, 0.9),
+    0 0 16px rgba(139, 92, 246, 0.2);
+}
+
+/* Progress Bar Sculpting */
+.clay-light-progress-track {
+  box-shadow: 
+    inset 0 3px 10px rgba(161, 161, 170, 0.25),
+    inset 0 2px 6px rgba(161, 161, 170, 0.2),
+    inset -2px 0 6px rgba(161, 161, 170, 0.15),
+    inset 2px 0 6px rgba(255, 255, 255, 0.4),
+    0 2px 4px rgba(161, 161, 170, 0.1);
+}
+
+.clay-light-progress-bar {
+  box-shadow: 
+    0 0 20px currentColor,
+    0 2px 8px currentColor,
+    inset 0 2px 4px rgba(255, 255, 255, 0.9),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.1),
+    inset -1px 0 4px rgba(0, 0, 0, 0.05),
+    inset 1px 0 4px rgba(255, 255, 255, 0.6);
+}
+
+/* Smoke Bubble with More Dimension */
+.light-smoke-bubble {
+  box-shadow: 
+    /* Main shadow depth */
+    0 12px 40px rgba(161, 161, 170, 0.25),
+    0 6px 20px rgba(161, 161, 170, 0.15),
+    /* Top sculpted highlight */
+    inset 0 4px 8px rgba(255, 255, 255, 1),
+    /* Bottom depth shadow */
+    inset 0 -4px 12px rgba(161, 161, 170, 0.2),
+    /* Left edge shadow */
+    inset -3px 0 10px rgba(161, 161, 170, 0.15),
+    /* Right edge highlight */
+    inset 3px 0 10px rgba(255, 255, 255, 0.8),
+    /* Outer rim highlight */
+    0 2px 4px rgba(255, 255, 255, 1),
+    /* Deep outer shadow */
+    0 16px 50px rgba(161, 161, 170, 0.2);
+}
+
+.light-smoke-bubble:hover {
+  box-shadow: 
+    0 16px 50px rgba(161, 161, 170, 0.3),
+    0 8px 25px rgba(161, 161, 170, 0.2),
+    inset 0 5px 10px rgba(255, 255, 255, 1),
+    inset 0 -5px 15px rgba(161, 161, 170, 0.25),
+    inset -4px 0 12px rgba(161, 161, 170, 0.18),
+    inset 4px 0 12px rgba(255, 255, 255, 0.9),
+    0 3px 6px rgba(255, 255, 255, 1),
+    0 20px 60px rgba(161, 161, 170, 0.25);
+}
+
+/* Badge Sculpting */
+.clay-light-badge-base {
+  box-shadow: 
+    /* Main depth */
+    0 6px 20px rgba(161, 161, 170, 0.2),
+    0 2px 8px rgba(161, 161, 170, 0.12),
+    /* Top highlight ridge */
+    inset 0 2px 4px rgba(255, 255, 255, 0.95),
+    /* Bottom depth */
+    inset 0 -2px 6px rgba(161, 161, 170, 0.15),
+    /* Side sculpting */
+    inset -1px 0 4px rgba(161, 161, 170, 0.1),
+    inset 1px 0 4px rgba(255, 255, 255, 0.7),
+    /* Outer highlight */
+    0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.clay-light-badge-base:hover {
+  box-shadow: 
+    0 8px 24px rgba(161, 161, 170, 0.25),
+    0 3px 10px rgba(161, 161, 170, 0.15),
+    inset 0 3px 6px rgba(255, 255, 255, 1),
+    inset 0 -3px 8px rgba(161, 161, 170, 0.18),
+    inset -2px 0 6px rgba(161, 161, 170, 0.12),
+    inset 2px 0 6px rgba(255, 255, 255, 0.8),
+    0 2px 3px rgba(255, 255, 255, 0.9);
+}
