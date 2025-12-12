@@ -1,5 +1,6 @@
-import { createClient } from '@base44/sdk';
-// import { getAccessToken } from '@base44/sdk/utils/auth-utils';
+// Using mock implementation for UI preview
+// Replace with real SDK when available: import { createClient } from '@base44/sdk';
+import { createClient } from './mockBase44.js';
 
 // Create a client with authentication required
 export const base44 = createClient({
