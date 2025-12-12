@@ -10,7 +10,7 @@ import {
   CheckCircle, Clock, AlertCircle, Phone, Mail,
   Bot, ChevronRight, Download, Calendar, Pill,
   Stethoscope, CreditCard, Activity, CalendarDays,
-  ClipboardCheck, HandHeart, Sparkles, Heart, Bell, Video
+  ClipboardCheck, HandHeart, Sparkles, Heart, Bell, Video, HelpCircle
 } from 'lucide-react';
 import { motion } from 'framer-motion'
 import { format } from 'date-fns'
@@ -36,6 +36,9 @@ import BenefitReminders from '../components/portal/BenefitReminders';
 import ClientPolicyRecommendationPanel from '../components/policy/ClientPolicyRecommendationPanel';
 import AIDocumentSearchPanel from '../components/documents/AIDocumentSearchPanel';
 import AIDocumentUploadEnhanced from '../components/documents/AIDocumentUploadEnhanced';
+import SecureDocumentCenter from '../components/portal/SecureDocumentCenter';
+import AIFAQAssistant from '../components/portal/AIFAQAssistant';
+import AppointmentBooking from '../components/portal/AppointmentBooking';
 
 export default function ClientPortal() {
   const queryClient = useQueryClient();

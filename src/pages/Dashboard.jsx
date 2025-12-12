@@ -28,6 +28,8 @@ import ProactiveRiskMonitor from '../components/risk/ProactiveRiskMonitor';
 import AgentPerformanceInsights from '../components/performance/AgentPerformanceInsights';
 import ClientHealthOverview from '../components/dashboard/ClientHealthOverview';
 import ContractComplianceMonitor from '../components/contracts/ContractComplianceMonitor';
+import AgentAutomatedTasks from '../components/tasks/AgentAutomatedTasks';
+import HealthContentReview from '../components/health/HealthContentReview';
 
 export default function Dashboard() {
   const { user, isAdmin, isAgent, isSuperAdmin } = useUserRole();
