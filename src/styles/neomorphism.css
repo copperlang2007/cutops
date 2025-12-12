@@ -1,0 +1,24 @@
+/* Smoke Bubble - Floating Orb */
+.light-smoke-bubble {
+  background: linear-gradient(145deg, #f0f4f8, #e0e6ec) !important;
+  box-shadow: 
+    30px 30px 60px rgba(163, 177, 198, 0.6),
+    -30px -30px 60px rgba(255, 255, 255, 0.9),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.7),
+    inset -4px -4px 8px rgba(163, 177, 198, 0.25),
+    0 15px 30px rgba(163, 177, 198, 0.4),
+    0 0 40px rgba(255, 255, 255, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.light-smoke-bubble:hover {
+  background: linear-gradient(145deg, #f5f8fc, #e5ebf1) !important;
+  box-shadow: 
+    40px 40px 80px rgba(163, 177, 198, 0.65),
+    -40px -40px 80px rgba(255, 255, 255, 0.95),
+    inset 5px 5px 10px rgba(255, 255, 255, 0.8),
+    inset -5px -5px 10px rgba(163, 177, 198, 0.3),
+    0 20px 40px rgba(163, 177, 198, 0.45),
+    0 0 50px rgba(255, 255, 255, 0.9) !important;
+  transform: translateY(-4px);
+}
