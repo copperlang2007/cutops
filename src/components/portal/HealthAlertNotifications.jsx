@@ -292,7 +292,7 @@ export default function HealthAlertNotifications({ client, portalUser, condition
         {alerts.length === 0 && !isLoading && (
           <CardContent className="p-6 text-center">
             <Sparkles className="w-12 h-12 mx-auto text-teal-500 mb-3" />
-            <h4 className="font-semibold text-slate-800 dark:text-white mb-1">You&apos;re All Caught Up!</h4>
+            <h4 className="font-semibold text-slate-800 dark:text-white mb-1">You're All Caught Up!</h4>
             <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
               No health alerts at the moment. Keep up the great work!
             </p>

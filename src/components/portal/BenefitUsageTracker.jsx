@@ -264,7 +264,7 @@ export default function BenefitUsageTracker({ client, onNavigate }) {
     } else if (days <= 30) {
       return <Badge className="bg-amber-100 text-amber-700 dark:bg-amber-900/40 text-xs">Expires in {days}d</Badge>;
     }
-    return <Badge variant="outline" className="text-xs">Expires {format(new Date(expiresAt), &apos;MMM d&apos;)}</Badge>;
+    return <Badge variant="outline" className="text-xs">Expires {format(new Date(expiresAt), 'MMM d')}</Badge>;
   };
 
   const hasReminder = (benefitId) => activeReminders.some(r => r.id === benefitId);

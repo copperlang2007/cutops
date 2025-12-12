@@ -330,7 +330,7 @@ Return as JSON:
                 </div>
 
                 <div>
-                  <Label className="text-base mb-3 block">Add your preferred doctors (we&apos;ll check network status)</Label>
+                  <Label className="text-base mb-3 block">Add your preferred doctors (we'll check network status)</Label>
                   <div className="flex gap-2">
                     <Input 
                       value={newDoctor}
@@ -385,7 +385,7 @@ Return as JSON:
                 </div>
 
                 <div>
-                  <Label className="text-base mb-3 block">List your medications (we&apos;ll check coverage)</Label>
+                  <Label className="text-base mb-3 block">List your medications (we'll check coverage)</Label>
                   <div className="flex gap-2">
                     <Input 
                       value={newMed}
@@ -423,7 +423,7 @@ Return as JSON:
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
-                  <Label className="text-base mb-3 block">What&apos;s most important in your plan?</Label>
+                  <Label className="text-base mb-3 block">What's most important in your plan?</Label>
                   <RadioGroup value={answers.budgetPreference} onValueChange={(v) => updateAnswer('budgetPreference', v)}>
                     {[
                       { value: 'low_premium', label: 'Lowest monthly premium', desc: 'Higher costs when I use services' },

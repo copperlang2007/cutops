@@ -584,7 +584,7 @@ Keep response concise but thorough. Use bullet points for lists.`,
             ) : (
               <div className="text-center py-8 bg-slate-50 rounded-xl">
                 <ListTodo className="w-12 h-12 mx-auto text-slate-300 mb-3" />
-                <p className="text-slate-500">Click "Generate Tasks" to create AI-suggested tasks</p>
+                <p className="text-slate-500">Click &quot;Generate Tasks&quot; to create AI-suggested tasks</p>
               </div>
             )}
           </TabsContent>

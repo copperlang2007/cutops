@@ -319,7 +319,7 @@ export default function VideoScriptGenerator({ onSave, onGenerateStoryboard }) {
                         </div>
                         <div className="text-left">
                           <p className="font-medium text-slate-800 dark:text-white">Scene {scene.sceneNumber || idx + 1}</p>
-                          <p className="text-xs text-slate-500">{scene.duration}s • {scene.cameraWork || &apos;Standard shot&apos;}</p>
+                          <p className="text-xs text-slate-500">{scene.duration}s • {scene.cameraWork || 'Standard shot'}</p>
                         </div>
                       </div>
                       {expandedScenes[idx] ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}

@@ -376,7 +376,7 @@ Return as JSON:
                           <div className="mt-4">
                             <div className="flex items-center justify-between text-xs text-slate-500 mb-1">
                               <span>Application Progress</span>
-                              <span>Est. {app.status === &apos;submitted&apos; ? &apos;2-4 weeks&apos; : &apos;4-6 weeks&apos;}</span>
+                              <span>Est. {app.status === 'submitted' ? '2-4 weeks' : '4-6 weeks'}</span>
                             </div>
                             <Progress value={app.status === 'submitted' ? 40 : 60} className="h-2" />
                           </div>
@@ -540,7 +540,7 @@ Return as JSON:
                         <SelectTrigger><SelectValue /></SelectTrigger>
                         <SelectContent>
                           {[1,2,3,4,5,6,7,8].map(n => (
-                            <SelectItem key={n} value={n.toString()}>{n} person{n > 1 ? &apos;s&apos; : &apos;&apos;}</SelectItem>
+                            <SelectItem key={n} value={n.toString()}>{n} person{n > 1 ? 's' : ''}</SelectItem>
                           ))}
                         </SelectContent>
                       </Select>
@@ -579,7 +579,7 @@ Return as JSON:
                           placeholder="Bank accounts, investments, etc."
                         />
                       </div>
-                      <p className="text-xs text-slate-500 mt-1">Don&apos;t include your home or one car</p>
+                      <p className="text-xs text-slate-500 mt-1">Don't include your home or one car</p>
                     </div>
                     <div>
                       <Label>Do you have a disability?</Label>

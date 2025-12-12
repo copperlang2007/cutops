@@ -257,7 +257,7 @@ Create a warm, personalized email that:
             className="bg-teal-600 hover:bg-teal-700"
           >
             {isAnalyzing ? <Loader2 className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
-            <span className="ml-1">{isAnalyzing ? &apos;Analyzing...&apos; : &apos;Analyze Clients&apos;}</span>
+            <span className="ml-1">{isAnalyzing ? 'Analyzing...' : 'Analyze Clients'}</span>
           </Button>
         </div>
       </CardHeader>
@@ -336,7 +336,7 @@ Create a warm, personalized email that:
                       </div>
                     </div>
                     <div className="text-xs text-slate-500 space-y-1">
-                      <p><strong>Risk factors:</strong> {client.risk_factors?.join(&apos;, &apos;)}</p>
+                      <p><strong>Risk factors:</strong> {client.risk_factors?.join(', ')}</p>
                       <p><strong>Strategy:</strong> {client.retention_strategy}</p>
                     </div>
                   </motion.div>

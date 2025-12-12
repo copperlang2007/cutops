@@ -58,7 +58,7 @@ export default function LicenseTable({ licenses, onSync, onAdd, isSyncing }) {
           <div className="py-12 text-center text-slate-400">
             <Shield className="w-12 h-12 mx-auto mb-3 opacity-50" />
             <p className="font-medium">No licenses found</p>
-            <p className="text-sm mt-1">Click "Sync NIPR" to fetch licenses or add manually</p>
+            <p className="text-sm mt-1">Click &quot;Sync NIPR&quot; to fetch licenses or add manually</p>
           </div>
         ) : (
           <Table>

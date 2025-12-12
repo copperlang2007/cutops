@@ -375,7 +375,7 @@ export default function GovtBenefitsScreening({ portalUser }) {
           </DialogHeader>
           <div className="space-y-4">
             <div className="p-4 clay-subtle rounded-xl">
-              <h4 className="font-bold text-slate-900 dark:text-white mb-2">What You&apos;ll Need:</h4>
+              <h4 className="font-bold text-slate-900 dark:text-white mb-2">What You'll Need:</h4>
               <ul className="space-y-2">
                 {selectedProgram?.eligibility_factors?.missing_info?.length > 0 ? (
                   selectedProgram.eligibility_factors.missing_info.map((info, i) => (

@@ -393,7 +393,7 @@ Provide:
             <Card className="border-0 shadow-sm dark:bg-slate-800/50">
               <CardContent className="py-12 text-center text-slate-400">
                 <Sparkles className="w-16 h-16 mx-auto mb-4 opacity-30" />
-                <p>Click "AI Analysis" to get compliance insights and recommendations</p>
+                <p>Click &quot;AI Analysis&quot; to get compliance insights and recommendations</p>
               </CardContent>
             </Card>
           ) : (

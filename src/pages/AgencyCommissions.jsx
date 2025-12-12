@@ -419,7 +419,7 @@ export default function AgencyCommissions() {
                                   {upload.carrier_name || 'No carrier'}
                                 </span>
                                 <span>{docType?.label}</span>
-                                <span>{upload.uploaded_date ? format(new Date(upload.uploaded_date), &apos;MMM d, yyyy&apos;) : &apos;&apos;}</span>
+                                <span>{upload.uploaded_date ? format(new Date(upload.uploaded_date), 'MMM d, yyyy') : ''}</span>
                               </div>
                               {upload.records_found > 0 && (
                                 <p className="text-xs text-teal-600 dark:text-teal-400 mt-1">
@@ -514,19 +514,19 @@ export default function AgencyCommissions() {
                     <div className="grid grid-cols-2 gap-2">
                       <div>
                         <span className="text-slate-500">Agent:</span>
-                        <span className="ml-2 font-medium">{selectedDiscrepancy.record.agent_name || &apos;N/A&apos;}</span>
+                        <span className="ml-2 font-medium">{selectedDiscrepancy.record.agent_name || 'N/A'}</span>
                       </div>
                       <div>
                         <span className="text-slate-500">Client:</span>
-                        <span className="ml-2 font-medium">{selectedDiscrepancy.record.client_name || &apos;N/A&apos;}</span>
+                        <span className="ml-2 font-medium">{selectedDiscrepancy.record.client_name || 'N/A'}</span>
                       </div>
                       <div>
                         <span className="text-slate-500">Carrier:</span>
-                        <span className="ml-2 font-medium">{selectedDiscrepancy.record.carrier_name || &apos;N/A&apos;}</span>
+                        <span className="ml-2 font-medium">{selectedDiscrepancy.record.carrier_name || 'N/A'}</span>
                       </div>
                       <div>
                         <span className="text-slate-500">Policy #:</span>
-                        <span className="ml-2 font-medium">{selectedDiscrepancy.record.policy_number || &apos;N/A&apos;}</span>
+                        <span className="ml-2 font-medium">{selectedDiscrepancy.record.policy_number || 'N/A'}</span>
                       </div>
                     </div>
                     {selectedDiscrepancy.expected && selectedDiscrepancy.actual && (
@@ -752,15 +752,15 @@ function ApplicationsTab({ records }) {
             <tbody>
               {records.map((record) => (
                 <tr key={record.id} className="border-b dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700/50">
-                  <td className="py-3 px-2 text-slate-800 dark:text-white">{record.agent_name || &apos;-&apos;}</td>
-                  <td className="py-3 px-2 text-slate-600 dark:text-slate-400">{record.client_name || &apos;-&apos;}</td>
-                  <td className="py-3 px-2 text-slate-600 dark:text-slate-400">{record.carrier_name || &apos;-&apos;}</td>
-                  <td className="py-3 px-2 text-slate-600 dark:text-slate-400">{record.plan_name || &apos;-&apos;}</td>
+                  <td className="py-3 px-2 text-slate-800 dark:text-white">{record.agent_name || '-'}</td>
+                  <td className="py-3 px-2 text-slate-600 dark:text-slate-400">{record.client_name || '-'}</td>
+                  <td className="py-3 px-2 text-slate-600 dark:text-slate-400">{record.carrier_name || '-'}</td>
+                  <td className="py-3 px-2 text-slate-600 dark:text-slate-400">{record.plan_name || '-'}</td>
                   <td className="py-3 px-2 text-slate-600 dark:text-slate-400">
                     {record.effective_date ? format(new Date(record.effective_date), 'MMM d, yyyy') : '-'}
                   </td>
                   <td className="py-3 px-2">
-                    <Badge variant="outline" className="capitalize">{record.status || &apos;pending&apos;}</Badge>
+                    <Badge variant="outline" className="capitalize">{record.status || 'pending'}</Badge>
                   </td>
                 </tr>
               ))}
@@ -1034,7 +1034,7 @@ function CommissionDataTab({ records }) {
       <Card className="border-0 shadow-sm dark:bg-slate-800 bg-gradient-to-r from-amber-500 to-orange-500 text-white">
         <CardContent className="p-6">
           <p className="text-amber-100 text-sm mb-1">Total Commission (Parsed)</p>
-          <p className="text-4xl font-bold">${totalCommission.toLocaleString(&apos;en-US&apos;, { minimumFractionDigits: 2 })}</p>
+          <p className="text-4xl font-bold">${totalCommission.toLocaleString('en-US', { minimumFractionDigits: 2 })}</p>
         </CardContent>
       </Card>
 
@@ -1058,14 +1058,14 @@ function CommissionDataTab({ records }) {
               <tbody>
                 {records.map((record) => (
                   <tr key={record.id} className="border-b dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700/50">
-                    <td className="py-3 px-2 text-slate-800 dark:text-white">{record.agent_name || &apos;-&apos;}</td>
-                    <td className="py-3 px-2 text-slate-600 dark:text-slate-400">{record.carrier_name || &apos;-&apos;}</td>
-                    <td className="py-3 px-2 text-slate-600 dark:text-slate-400">{record.policy_number || &apos;-&apos;}</td>
-                    <td className="py-3 px-2 text-slate-600 dark:text-slate-400">{record.client_name || &apos;-&apos;}</td>
+                    <td className="py-3 px-2 text-slate-800 dark:text-white">{record.agent_name || '-'}</td>
+                    <td className="py-3 px-2 text-slate-600 dark:text-slate-400">{record.carrier_name || '-'}</td>
+                    <td className="py-3 px-2 text-slate-600 dark:text-slate-400">{record.policy_number || '-'}</td>
+                    <td className="py-3 px-2 text-slate-600 dark:text-slate-400">{record.client_name || '-'}</td>
                     <td className="py-3 px-2 text-right font-medium text-emerald-600">
                       ${(record.commission_amount || 0).toFixed(2)}
                     </td>
-                    <td className="py-3 px-2 text-slate-600 dark:text-slate-400">{record.commission_period || &apos;-&apos;}</td>
+                    <td className="py-3 px-2 text-slate-600 dark:text-slate-400">{record.commission_period || '-'}</td>
                   </tr>
                 ))}
               </tbody>

@@ -57,7 +57,7 @@ export default function AppointmentTable({ appointments, onSync, onAdd, isSyncin
           <div className="py-12 text-center text-slate-400">
             <FileCheck className="w-12 h-12 mx-auto mb-3 opacity-50" />
             <p className="font-medium">No carrier appointments found</p>
-            <p className="text-sm mt-1">Click "Sync Sunfire" to fetch appointments or add manually</p>
+            <p className="text-sm mt-1">Click &quot;Sync Sunfire&quot; to fetch appointments or add manually</p>
           </div>
         ) : (
           <Table>

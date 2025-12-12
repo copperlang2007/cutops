@@ -315,7 +315,7 @@ Create a clear, specific task title and detailed description that includes:
                 </DialogTrigger>
                 <DialogContent className="max-w-lg">
                   <DialogHeader>
-                    <DialogTitle>{editingRule ? &apos;Edit&apos; : &apos;Create&apos;} Automation Rule</DialogTitle>
+                    <DialogTitle>{editingRule ? 'Edit' : 'Create'} Automation Rule</DialogTitle>
                   </DialogHeader>
                   <div className="space-y-4 mt-4">
                     <div>

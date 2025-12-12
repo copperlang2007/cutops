@@ -126,7 +126,7 @@ export default function NIPRSyncModal({ open, onClose, agent, onComplete }) {
                   </div>
                   <div className="flex justify-between text-sm">
                     <span className="text-slate-600">States</span>
-                    <span className="font-semibold text-slate-800">{results.states.join(&apos;, &apos;)}</span>
+                    <span className="font-semibold text-slate-800">{results.states.join(', ')}</span>
                   </div>
                   <div className="flex justify-between text-sm">
                     <span className="text-slate-600">Adverse Actions</span>

@@ -117,7 +117,7 @@ Provide:
         {!insights ? (
           <div className="text-center py-8 text-slate-400">
             <TrendingUp className="w-12 h-12 mx-auto mb-3 opacity-30" />
-            <p>Click "Analyze" to get AI-powered performance insights</p>
+            <p>Click &quot;Analyze&quot; to get AI-powered performance insights</p>
           </div>
         ) : (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6">

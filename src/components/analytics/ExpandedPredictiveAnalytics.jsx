@@ -373,8 +373,8 @@ Be specific with dates, names, and numbers.`,
                       </div>
                     </div>
                     <div className="text-xs text-slate-600">
-                      <p className="mb-1">Key Factors: {agent.key_factors?.join(&apos;, &apos;)}</p>
-                      <p>Actions: {agent.recommended_actions?.slice(0, 2).join(&apos;; &apos;)}</p>
+                      <p className="mb-1">Key Factors: {agent.key_factors?.join(', ')}</p>
+                      <p>Actions: {agent.recommended_actions?.slice(0, 2).join('; ')}</p>
                     </div>
                   </div>
                 ))}
@@ -407,9 +407,9 @@ Be specific with dates, names, and numbers.`,
                         <span className="text-sm font-medium">{risk.days_until_issue} days</span>
                       </div>
                     </div>
-                    <p className="text-xs mb-2">Issues: {risk.specific_items?.join(&apos;, &apos;)}</p>
+                    <p className="text-xs mb-2">Issues: {risk.specific_items?.join(', ')}</p>
                     <div className="flex items-center justify-between">
-                      <p className="text-xs text-slate-600">Actions: {risk.preventive_actions?.slice(0, 2).join(&apos;; &apos;)}</p>
+                      <p className="text-xs text-slate-600">Actions: {risk.preventive_actions?.slice(0, 2).join('; ')}</p>
                       {risk.auto_task_recommended && (
                         <Button 
                           size="sm" 

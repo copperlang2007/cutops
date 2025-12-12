@@ -122,7 +122,7 @@ Provide detailed predictions including:
         {!predictions ? (
           <div className="text-center py-12 text-slate-400">
             <TrendingUp className="w-16 h-16 mx-auto mb-4 opacity-30" />
-            <p>Click "Generate Forecast" to get AI-powered sales predictions</p>
+            <p>Click &quot;Generate Forecast&quot; to get AI-powered sales predictions</p>
           </div>
         ) : (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6">

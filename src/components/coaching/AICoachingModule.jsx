@@ -305,7 +305,7 @@ Evaluate:
             className="bg-purple-600 hover:bg-purple-700"
           >
             {isGenerating ? <Loader2 className="w-4 h-4 animate-spin" /> : <Sparkles className="w-4 h-4" />}
-            <span className="ml-1">{isGenerating ? &apos;Analyzing...&apos; : &apos;Generate Plan&apos;}</span>
+            <span className="ml-1">{isGenerating ? 'Analyzing...' : 'Generate Plan'}</span>
           </Button>
         </div>
       </CardHeader>
@@ -341,7 +341,7 @@ Evaluate:
                   {Object.entries(coachingPlan.score_breakdown || {}).map(([key, val]) => (
                     <div key={key} className="text-center">
                       <Progress value={val} className="h-1.5 mb-1 [&>div]:bg-purple-500" />
-                      <p className="text-xs text-slate-500 capitalize">{key.replace(&apos;_&apos;, &apos; &apos;)}</p>
+                      <p className="text-xs text-slate-500 capitalize">{key.replace('_', ' ')}</p>
                       <p className="text-sm font-medium">{val}%</p>
                     </div>
                   ))}
