@@ -1,17 +1,17 @@
-import React, { useState, useMemo } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { useState, useMemo } from 'react'
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Input } from '@/components/ui/input'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { 
   FileText, Search, Filter, Download, Eye, Calendar,
   User, Activity, Database, Settings, Shield, Clock,
   ChevronLeft, ChevronRight, RefreshCw
 } from 'lucide-react';
-import { format } from 'date-fns';
-import { motion } from 'framer-motion';
+import { format } from 'date-fns'
+import { motion } from 'framer-motion'
 
 const ACTION_ICONS = {
   create: { icon: Database, color: 'text-emerald-600 bg-emerald-100' },

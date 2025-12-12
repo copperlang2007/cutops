@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Sparkles, Loader2, RefreshCw, FileText, Users, TrendingUp } from 'lucide-react';
-import ReactMarkdown from 'react-markdown';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Sparkles, Loader2, RefreshCw, FileText, Users, TrendingUp } from 'lucide-react'
 
 export default function AIReportSummary({ metrics, agents, licenses, contracts }) {
   const [summary, setSummary] = useState(null);

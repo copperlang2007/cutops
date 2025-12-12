@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { 
   Sparkles, PenTool, Image, Video, Grid3X3, 
   Film, Target, FolderOpen, Clock, Trash2,
   Eye, Download, MoreHorizontal
 } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { format } from 'date-fns';
+import { motion } from 'framer-motion'
+import { format } from 'date-fns'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { toast } from 'sonner';
+import { toast } from 'sonner'
 import AdCopyGenerator from '../components/content/AdCopyGenerator';
 import ImageGenerator from '../components/content/ImageGenerator';
 import VideoScriptGenerator from '../components/content/VideoScriptGenerator';

@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Progress } from '@/components/ui/progress';
+import { useState, useEffect, useRef } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Input } from '@/components/ui/input'
+import { Progress } from '@/components/ui/progress'
 import { 
   Bot, Send, Sparkles, Heart, Activity, Target, 
   TrendingUp, Award, Calendar, Loader2, RefreshCw,
@@ -13,10 +13,10 @@ import {
   Brain, Sun, Moon, Pill, CheckCircle, ChevronRight,
   Flame, Zap, Star
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { toast } from 'sonner';
+import { motion, AnimatePresence } from 'framer-motion'
+import { toast } from 'sonner'
 import ReactMarkdown from 'react-markdown';
-import { format } from 'date-fns';
+import { format } from 'date-fns'
 
 // Simulated benefit usage data
 const getBenefitUsageData = (userId) => ({

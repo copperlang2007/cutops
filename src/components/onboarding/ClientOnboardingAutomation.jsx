@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Switch } from '@/components/ui/switch';
-import { Label } from '@/components/ui/label';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { useState, useEffect } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Switch } from '@/components/ui/switch'
+import { Label } from '@/components/ui/label'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { 
   Zap, Mail, Clock, Calendar, Users, TrendingUp,
   Settings, CheckCircle, AlertTriangle, Loader2, RefreshCw,
   Send, Bell, Target, Sparkles
 } from 'lucide-react';
-import { format, differenceInDays, addDays } from 'date-fns';
-import { toast } from 'sonner';
-import { motion } from 'framer-motion';
+import { differenceInDays } from 'date-fns'
+import { toast } from 'sonner'
+import { motion } from 'framer-motion'
 
 const MILESTONE_EMAILS = {
   day_7: {

@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Input } from '@/components/ui/input'
 import { 
   Brain, Sparkles, Loader2, Send, MessageSquare, 
   ThumbsUp, ThumbsDown, Copy, RefreshCw, Lightbulb
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { toast } from 'sonner';
+import { motion, AnimatePresence } from 'framer-motion'
+import { toast } from 'sonner'
 
 const QUICK_QUESTIONS = [
   "What are the AEP dates this year?",

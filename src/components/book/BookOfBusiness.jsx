@@ -1,9 +1,9 @@
-import React, { useMemo } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery } from '@tanstack/react-query';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { useMemo } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery } from '@tanstack/react-query'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 import { 
   PieChart, Pie, Cell, ResponsiveContainer, Tooltip,
   BarChart, Bar, XAxis, YAxis, CartesianGrid
@@ -12,7 +12,7 @@ import {
   Briefcase, TrendingUp, Users, DollarSign, Plus,
   RefreshCw, AlertTriangle
 } from 'lucide-react';
-import { differenceInDays, format } from 'date-fns';
+import { differenceInDays, format } from 'date-fns'
 
 const COLORS = ['#0d9488', '#3b82f6', '#f59e0b', '#ef4444', '#8b5cf6'];
 

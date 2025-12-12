@@ -1,15 +1,15 @@
-import React, { useState, useCallback } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+import { useState, useCallback } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
 import { 
   Upload, Sparkles, FileText, CheckCircle2, AlertTriangle, 
   Loader2, Eye, RefreshCw, FileCheck, X, Zap, Shield
 } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
-import { toast } from 'sonner';
-import { motion, AnimatePresence } from 'framer-motion';
+import { base44 } from '@/api/base44Client'
+import { toast } from 'sonner'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const DOCUMENT_CATEGORIES = {
   state_license: { label: 'State License', icon: Shield, color: 'text-blue-600 bg-blue-100' },

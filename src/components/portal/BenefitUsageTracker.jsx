@@ -1,23 +1,22 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Progress } from '@/components/ui/progress'
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
+import { Label } from '@/components/ui/label'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { 
   DollarSign, Heart, Pill, Stethoscope, 
   Eye, Ear, Activity, Calendar, Bell, ExternalLink,
   Clock, AlertTriangle, ShoppingCart, Dumbbell,
   ChevronRight, CheckCircle, X
 } from 'lucide-react';
-import { format, differenceInDays, addDays } from 'date-fns';
-import { motion } from 'framer-motion';
-import { toast } from 'sonner';
+import { format, differenceInDays, addDays } from 'date-fns'
+import { motion } from 'framer-motion'
+import { toast } from 'sonner'
 
 export default function BenefitUsageTracker({ client, onNavigate }) {
   const [showReminderModal, setShowReminderModal] = useState(false);
@@ -265,7 +264,7 @@ export default function BenefitUsageTracker({ client, onNavigate }) {
     } else if (days <= 30) {
       return <Badge className="bg-amber-100 text-amber-700 dark:bg-amber-900/40 text-xs">Expires in {days}d</Badge>;
     }
-    return <Badge variant="outline" className="text-xs">Expires {format(new Date(expiresAt), 'MMM d')}</Badge>;
+    return <Badge variant="outline" className="text-xs">Expires {format(new Date(expiresAt), &apos;MMM d&apos;)}</Badge>;
   };
 
   const hasReminder = (benefitId) => activeReminders.some(r => r.id === benefitId);

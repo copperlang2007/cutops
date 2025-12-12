@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
-import { CheckCircle, AlertTriangle, Loader2, Shield, ExternalLink } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from 'react'
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog"
+import { Button } from "@/components/ui/button"
+import { Progress } from "@/components/ui/progress"
+import { CheckCircle, AlertTriangle, Loader2, Shield } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
 
 export default function NIPRSyncModal({ open, onClose, agent, onComplete }) {
   const [status, setStatus] = useState('idle'); // idle, syncing, complete, error
@@ -126,7 +126,7 @@ export default function NIPRSyncModal({ open, onClose, agent, onComplete }) {
                   </div>
                   <div className="flex justify-between text-sm">
                     <span className="text-slate-600">States</span>
-                    <span className="font-semibold text-slate-800">{results.states.join(', ')}</span>
+                    <span className="font-semibold text-slate-800">{results.states.join(&apos;, &apos;)}</span>
                   </div>
                   <div className="flex justify-between text-sm">
                     <span className="text-slate-600">Adverse Actions</span>

@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Badge } from '@/components/ui/badge';
-import { Checkbox } from '@/components/ui/checkbox';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Checkbox } from '@/components/ui/checkbox'
 import { 
   Shield, User, Mail, Phone, MapPin, Calendar,
   CheckCircle, Loader2, ArrowRight, Star
 } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { toast } from 'sonner';
+import { motion } from 'framer-motion'
+import { toast } from 'sonner'
 
 const features = [
   { icon: Shield, title: 'Plan Comparison', desc: 'Compare Medicare plans side by side' },

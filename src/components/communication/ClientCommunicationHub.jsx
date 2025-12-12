@@ -1,18 +1,18 @@
 import React from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Progress } from '@/components/ui/progress';
+import { base44 } from '@/api/base44Client'
+import { useMutation } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Textarea } from '@/components/ui/textarea'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Progress } from '@/components/ui/progress'
 import { 
   Mail, MessageSquare, Phone, Calendar, TrendingUp, TrendingDown,
   Sparkles, Loader2, Send, Copy, AlertTriangle, CheckCircle, Clock,
   Target, Radio, FileText
 } from 'lucide-react';
-import { toast } from 'sonner';
+import { toast } from 'sonner'
 
 export default function ClientCommunicationHub({ client, agentId }) {
   const [emailDraft, setEmailDraft] = React.useState(null);

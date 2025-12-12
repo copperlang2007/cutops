@@ -1,12 +1,11 @@
-import React, { useState, useMemo } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts';
-import { Sparkles, Loader2, TrendingUp, DollarSign, Target, Lightbulb } from 'lucide-react';
-import { format, addMonths, subMonths } from 'date-fns';
+import { useState, useMemo } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts'
+import { Sparkles, Loader2, TrendingUp, DollarSign, Target, Lightbulb } from 'lucide-react'
+import { format } from 'date-fns'
 
 export default function CommissionForecast({ commissions, agents, contracts }) {
   const [selectedAgent, setSelectedAgent] = useState('all');

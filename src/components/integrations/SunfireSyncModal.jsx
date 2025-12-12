@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
-import { CheckCircle, AlertCircle, Loader2, Zap, FileCheck } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from 'react'
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog"
+import { Button } from "@/components/ui/button"
+import { Progress } from "@/components/ui/progress"
+import { CheckCircle, Loader2, Zap } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
 
 const CARRIERS = [
   { name: 'Humana', code: 'HUM' },

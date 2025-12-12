@@ -1,16 +1,16 @@
-import React, { useState, useMemo } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery } from '@tanstack/react-query';
-import { Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
-import { Users, Plus, Search, Filter, X, MapPin, Building2 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { motion } from 'framer-motion';
+import { useState, useMemo } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery } from '@tanstack/react-query'
+import { Link } from 'react-router-dom'
+import { createPageUrl } from '@/utils'
+import { Users, Plus, Search, Filter, X, MapPin, Building2 } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Badge } from '@/components/ui/badge'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { motion } from 'framer-motion'
 import AgentCard from '../components/agents/AgentCard';
-import { US_STATES, CARRIERS, ONBOARDING_STATUSES } from '../components/shared/constants';
+import { US_STATES, CARRIERS, ONBOARDING_STATUSES } from '../components/shared/constants'
 import RoleGuard from '../components/shared/RoleGuard';
 
 export default function Agents() {

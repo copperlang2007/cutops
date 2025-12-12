@@ -1,16 +1,15 @@
-import React from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 import { 
   Award, CheckCircle, XCircle, Calendar, DollarSign, 
   Shield, AlertCircle, PhoneCall, Sparkles, TrendingUp
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { toast } from 'sonner';
-import { format } from 'date-fns';
+import { motion, AnimatePresence } from 'framer-motion'
+import { toast } from 'sonner'
+import { format } from 'date-fns'
 
 export default function ClientPolicyRecommendationPanel({ clientId, portalUserId }) {
   const queryClient = useQueryClient();

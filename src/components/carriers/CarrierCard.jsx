@@ -1,10 +1,8 @@
-import React from 'react';
-import { Card } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Building2, MapPin, Users, ExternalLink, Trash2 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { Card } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { MapPin, Users, ExternalLink, Trash2 } from 'lucide-react'
 
 export default function CarrierCard({ carrier, agentCount = 0, onClick, onDelete }) {
   const initials = carrier.code?.substring(0, 2).toUpperCase() || carrier.name?.substring(0, 2).toUpperCase();

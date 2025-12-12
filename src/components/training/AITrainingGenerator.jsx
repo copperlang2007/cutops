@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { 
   Sparkles, Loader2, RefreshCw, BookOpen, Video, FileText, 
   ExternalLink, CheckCircle, Target, TrendingUp, Award
 } from 'lucide-react';
-import { toast } from 'sonner';
+import { toast } from 'sonner'
 
 export default function AITrainingGenerator({ 
   agent, 

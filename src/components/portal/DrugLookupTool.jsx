@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
-import { Alert, AlertDescription } from '@/components/ui/alert';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Badge } from '@/components/ui/badge'
+import { Alert, AlertDescription } from '@/components/ui/alert'
 import { 
   Pill, Search, Plus, X, AlertTriangle, CheckCircle, 
   DollarSign, Loader2, Info, ArrowRight, Heart
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { toast } from 'sonner';
+import { motion, AnimatePresence } from 'framer-motion'
+import { toast } from 'sonner'
 
 const tierLabels = {
   1: { label: 'Tier 1 - Preferred Generic', color: 'bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-400' },

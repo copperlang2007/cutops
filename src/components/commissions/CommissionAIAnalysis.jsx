@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Sparkles, Loader2, RefreshCw, AlertTriangle, TrendingUp, Flag, DollarSign } from 'lucide-react';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Sparkles, Loader2, RefreshCw, AlertTriangle, TrendingUp, Flag, DollarSign } from 'lucide-react'
 
 export default function CommissionAIAnalysis({ commissions, agents, contracts }) {
   const [analysis, setAnalysis] = useState(null);

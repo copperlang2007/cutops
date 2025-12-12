@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 import { 
   Shield, FileText, MessageSquare, Home, User, 
   CheckCircle, Clock, AlertCircle, Phone, Mail,
@@ -12,12 +12,11 @@ import {
   Stethoscope, CreditCard, Activity, CalendarDays,
   ClipboardCheck, HandHeart, Sparkles, Heart, Bell, Video
 } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { format, differenceInDays } from 'date-fns';
-import { createPageUrl } from '@/utils';
+import { motion } from 'framer-motion'
+import { format } from 'date-fns'
+import { createPageUrl } from '@/utils'
 import ClientPortalPolicyView from '../components/portal/ClientPortalPolicyView';
 import ClientPortalOnboarding from '../components/portal/ClientPortalOnboarding';
-import ClientPortalDocuments from '../components/portal/ClientPortalDocuments';
 import ClientPortalMessages from '../components/portal/ClientPortalMessages';
 import ClientPortalChatbot from '../components/portal/ClientPortalChatbot';
 import AppointmentScheduler from '../components/portal/AppointmentScheduler';

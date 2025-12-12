@@ -1,10 +1,9 @@
-import React from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { FileCheck, CheckCircle, Clock, XCircle, AlertTriangle, RefreshCw, Plus } from "lucide-react";
-import { format } from "date-fns";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+import { FileCheck, CheckCircle, Clock, XCircle, RefreshCw, Plus } from "lucide-react"
+import { format } from "date-fns"
 
 const appointmentStatusConfig = {
   appointed: { label: 'Appointed', color: 'bg-emerald-100 text-emerald-700', icon: CheckCircle },

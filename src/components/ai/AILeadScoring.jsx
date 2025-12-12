@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
 import { 
   Sparkles, Loader2, RefreshCw, TrendingUp, Users, Star,
   AlertTriangle, CheckCircle, Target
 } from 'lucide-react';
-import { toast } from 'sonner';
+import { toast } from 'sonner'
 
 export default function AILeadScoring({ agents, licenses, contracts, checklistItems }) {
   const [scores, setScores] = useState(null);

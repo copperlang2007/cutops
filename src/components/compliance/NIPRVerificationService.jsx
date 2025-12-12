@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
 import { 
   Database, Sparkles, Loader2, CheckCircle, XCircle, AlertTriangle,
   RefreshCw, Shield, ExternalLink, Clock
 } from 'lucide-react';
-import { format, differenceInDays } from 'date-fns';
-import { toast } from 'sonner';
+import { format } from 'date-fns'
+import { toast } from 'sonner'
 
 export default function NIPRVerificationService({ 
   agent, 

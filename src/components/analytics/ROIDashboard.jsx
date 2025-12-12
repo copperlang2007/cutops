@@ -1,13 +1,12 @@
-import React, { useMemo } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { useMemo } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { 
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts';
 import { 
   TrendingUp, DollarSign, Clock, Users, Target, ArrowUp, ArrowDown
 } from 'lucide-react';
-import { differenceInDays, format, subMonths } from 'date-fns';
+import { differenceInDays, format, subMonths } from 'date-fns'
 
 export default function ROIDashboard({ agents, commissions, checklistItems }) {
   const metrics = useMemo(() => {

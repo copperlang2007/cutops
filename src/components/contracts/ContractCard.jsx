@@ -1,14 +1,13 @@
-import React from 'react';
-import { Card } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 import { 
   FileSignature, Calendar, AlertTriangle, ChevronRight, 
   Clock, CheckCircle, XCircle, Send, Sparkles 
 } from 'lucide-react';
-import { format, differenceInDays } from 'date-fns';
-import { motion } from 'framer-motion';
-import { CONTRACT_STATUS_CONFIG } from '../shared/constants';
+import { format, differenceInDays } from 'date-fns'
+import { motion } from 'framer-motion'
+import { CONTRACT_STATUS_CONFIG } from '../shared/constants'
 
 const statusIcons = {
   not_started: Clock,

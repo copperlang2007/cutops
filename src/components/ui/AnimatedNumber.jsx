@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { motion, useSpring, useTransform } from 'framer-motion';
+import { useEffect, useState } from 'react'
+import { motion, useSpring } from 'framer-motion'
 
 export default function AnimatedNumber({ 
   value, 

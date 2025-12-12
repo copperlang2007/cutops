@@ -1,16 +1,14 @@
-import React from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Checkbox } from '@/components/ui/checkbox';
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { 
   FileText, Download, Sparkles, Loader2, TrendingUp, 
   CheckCircle, AlertTriangle, DollarSign, Users, Target
 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 export default function AIReportBuilder() {
   const [reportType, setReportType] = React.useState('agent_performance');

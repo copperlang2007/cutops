@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Switch } from '@/components/ui/switch';
+import { useState } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Switch } from '@/components/ui/switch'
 import { 
   Database, RefreshCw, CheckCircle, Link2, Unlink,
   ArrowRight, ArrowLeft, Settings, Loader2
 } from 'lucide-react';
-import { toast } from 'sonner';
+import { toast } from 'sonner'
 
 const CRM_SYSTEMS = [
   { 

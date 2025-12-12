@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Textarea } from '@/components/ui/textarea';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Textarea } from '@/components/ui/textarea'
 import { 
   Brain, Sparkles, Loader2, Target, TrendingUp, MessageSquare,
   Play, CheckCircle, Star, Lightbulb, GraduationCap, Award,
   ThumbsUp, ThumbsDown, RefreshCw, BookOpen
 } from 'lucide-react';
-import { toast } from 'sonner';
-import { motion } from 'framer-motion';
+import { toast } from 'sonner'
+import { motion } from 'framer-motion'
 
 export default function AICoachingModule({ 
   agent, 
@@ -305,7 +305,7 @@ Evaluate:
             className="bg-purple-600 hover:bg-purple-700"
           >
             {isGenerating ? <Loader2 className="w-4 h-4 animate-spin" /> : <Sparkles className="w-4 h-4" />}
-            <span className="ml-1">{isGenerating ? 'Analyzing...' : 'Generate Plan'}</span>
+            <span className="ml-1">{isGenerating ? &apos;Analyzing...&apos; : &apos;Generate Plan&apos;}</span>
           </Button>
         </div>
       </CardHeader>
@@ -341,7 +341,7 @@ Evaluate:
                   {Object.entries(coachingPlan.score_breakdown || {}).map(([key, val]) => (
                     <div key={key} className="text-center">
                       <Progress value={val} className="h-1.5 mb-1 [&>div]:bg-purple-500" />
-                      <p className="text-xs text-slate-500 capitalize">{key.replace('_', ' ')}</p>
+                      <p className="text-xs text-slate-500 capitalize">{key.replace(&apos;_&apos;, &apos; &apos;)}</p>
                       <p className="text-sm font-medium">{val}%</p>
                     </div>
                   ))}

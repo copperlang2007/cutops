@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function ProgressRing({ progress, size = 120, strokeWidth = 8, children }) {

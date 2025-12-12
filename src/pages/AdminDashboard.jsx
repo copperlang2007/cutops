@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { base44 } from '@/api/base44Client'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Card, CardContent } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
 import { 
   Settings, Users, Shield, Trophy, FileText, Activity,
   Lock, Sliders, Bell, Database
 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 import RoleGuard from '../components/shared/RoleGuard';
 import RolePermissionManager from '../components/admin/RolePermissionManager';
 import ComplianceRulesConfig from '../components/admin/ComplianceRulesConfig';

@@ -1,15 +1,15 @@
-import React, { useState, useMemo } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Checkbox } from '@/components/ui/checkbox';
+import { useState, useMemo } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Checkbox } from '@/components/ui/checkbox'
 import { 
   Mail, Sparkles, Loader2, Send, Users, Clock, Trophy, 
   Bell, CheckCircle, AlertTriangle
 } from 'lucide-react';
-import { differenceInDays, format } from 'date-fns';
-import { toast } from 'sonner';
+import { differenceInDays } from 'date-fns'
+import { toast } from 'sonner'
 
 const OUTREACH_TYPES = [
   { id: 'task_reminder', label: 'Task Reminders', icon: Clock, color: 'amber' },

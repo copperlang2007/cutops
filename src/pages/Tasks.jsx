@@ -1,21 +1,20 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { createPageUrl } from '@/utils';
-import { format, differenceInDays } from 'date-fns';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { createPageUrl } from '@/utils'
+import { format, differenceInDays } from 'date-fns'
 import { 
   CheckSquare, Plus, Filter, Clock, AlertTriangle, CheckCircle,
   Calendar, User, ChevronRight, Sparkles, Loader2
 } from 'lucide-react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Checkbox } from '@/components/ui/checkbox';
-import { motion, AnimatePresence } from 'framer-motion';
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Checkbox } from '@/components/ui/checkbox'
+import { motion, AnimatePresence } from 'framer-motion'
 import TaskFormModal from '../components/tasks/TaskFormModal';
-import { generateAutomatedTasks } from '../components/tasks/taskAutomation';
+import { generateAutomatedTasks } from '../components/tasks/taskAutomation'
 import RoleGuard from '../components/shared/RoleGuard';
 
 const priorityConfig = {

@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Switch } from '@/components/ui/switch';
+import { useState } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Switch } from '@/components/ui/switch'
 import { 
   Bell, Mail, MessageSquare, Smartphone, Settings,
   CheckCircle, Clock, AlertTriangle, Zap
 } from 'lucide-react';
-import { toast } from 'sonner';
+import { toast } from 'sonner'
 
 const NOTIFICATION_TYPES = [
   { id: 'license_expiry', name: 'License Expiration', icon: AlertTriangle, color: 'text-red-500' },

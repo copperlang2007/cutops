@@ -1,15 +1,15 @@
-import React, { useState, useMemo } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+import { useMemo } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
 import { 
   GraduationCap, Plus, AlertTriangle, CheckCircle, Clock,
   Calendar, Award
 } from 'lucide-react';
-import { differenceInDays, format } from 'date-fns';
+import { differenceInDays } from 'date-fns'
 
 export default function CECreditTracker({ agentId, licenses }) {
   const queryClient = useQueryClient();

@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { Sparkles, Loader2, CheckCircle, Clock, FileText, AlertCircle, TrendingUp, MessageSquare } from 'lucide-react';
-import { toast } from 'sonner';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
+import { Sparkles, Loader2, CheckCircle, Clock, FileText, TrendingUp, MessageSquare } from 'lucide-react'
+import { toast } from 'sonner'
 
 export default function AIOnboardingGuide({ client, onComplete }) {
   const queryClient = useQueryClient();

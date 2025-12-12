@@ -1,15 +1,14 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+import { useState, useMemo } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 import { 
   Shield, AlertTriangle, Clock, CheckCircle, Sparkles, 
   Loader2, RefreshCw, Mail, FileText, Calendar
 } from 'lucide-react';
-import { differenceInDays, format, addDays } from 'date-fns';
-import { toast } from 'sonner';
+import { differenceInDays, format, addDays } from 'date-fns'
+import { toast } from 'sonner'
 
 export default function AIComplianceMonitor({ 
   agents, 

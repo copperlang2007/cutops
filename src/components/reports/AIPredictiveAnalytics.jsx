@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { TrendingUp, TrendingDown, Sparkles, Loader2, Calendar, Target, AlertTriangle } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
-import { toast } from 'sonner';
-import { motion } from 'framer-motion';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts';
-import { format, addMonths } from 'date-fns';
+import { useState } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { TrendingUp, Sparkles, Loader2, Target, AlertTriangle } from 'lucide-react'
+import { base44 } from '@/api/base44Client'
+import { toast } from 'sonner'
+import { motion } from 'framer-motion'
+import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts'
+import { format } from 'date-fns'
 
 export default function AIPredictiveAnalytics({ agents, commissions, contracts, licenses }) {
   const [predictions, setPredictions] = useState(null);

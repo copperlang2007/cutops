@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { TrendingUp, TrendingDown, Sparkles, Loader2, Target, Award, AlertTriangle, BookOpen } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
-import { toast } from 'sonner';
-import { motion } from 'framer-motion';
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { TrendingUp, TrendingDown, Sparkles, Loader2, Target, Award, AlertTriangle, BookOpen } from 'lucide-react'
+import { base44 } from '@/api/base44Client'
+import { toast } from 'sonner'
+import { motion } from 'framer-motion'
 
 export default function AIPerformanceInsights({ agent, commissions, policies, licenses, contracts, trainingProgress, teamAverages }) {
   const [insights, setInsights] = useState(null);

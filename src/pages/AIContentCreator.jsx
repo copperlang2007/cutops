@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 import { 
   Sparkles, PenTool, Image, Video, Grid3X3, Film,
   Layers, Clock, Trash2, Eye, MoreVertical, Folder
 } from 'lucide-react';
-import { format } from 'date-fns';
-import { motion } from 'framer-motion';
-import { toast } from 'sonner';
+import { format } from 'date-fns'
+import { motion } from 'framer-motion'
+import { toast } from 'sonner'
 import {
   DropdownMenu,
   DropdownMenuContent,

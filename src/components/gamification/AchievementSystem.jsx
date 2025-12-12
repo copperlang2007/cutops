@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { useState } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
 import { 
   Award, Trophy, Star, Target, Zap, Crown, Lock, CheckCircle,
   TrendingUp, Users, Shield, DollarSign, Flame, Gift
 } from 'lucide-react';
-import { format } from 'date-fns';
-import { motion } from 'framer-motion';
+import { format } from 'date-fns'
+import { motion } from 'framer-motion'
 
 const ACHIEVEMENT_DEFINITIONS = {
   first_sale: { name: 'First Sale', description: 'Close your first policy', icon: DollarSign, points: 100, tier: 'bronze' },

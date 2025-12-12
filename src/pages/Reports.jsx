@@ -1,16 +1,15 @@
-import React, { useState, useMemo } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { format, subDays, startOfMonth, endOfMonth, isWithinInterval, differenceInDays } from 'date-fns';
+import { useState, useMemo } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { format, subDays, differenceInDays } from 'date-fns'
 import { 
   BarChart3, Users, Shield, FileSignature, TrendingUp, Download,
   Calendar, Filter, AlertTriangle, CheckCircle, Clock, Sparkles, Loader2
 } from 'lucide-react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 import ReportMetricCard from '../components/reports/ReportMetricCard';
 import AIReportSummary from '../components/reports/AIReportSummary';
 import ReportFilters from '../components/reports/ReportFilters';
@@ -18,31 +17,25 @@ import ReportExport from '../components/reports/ReportExport';
 import AIPredictiveAnalytics from '../components/reports/AIPredictiveAnalytics';
 import AIAnomalyDetection from '../components/reports/AIAnomalyDetection';
 import AIReportGenerator from '../components/reports/AIReportGenerator';
-import OldAIPredictiveAnalytics from '../components/analytics/AIPredictiveAnalytics';
-import AISchedulingAssistant from '../components/scheduling/AISchedulingAssistant';
 import AIReportBuilder from '../components/reports/AIReportBuilder';
 import AutomatedReportScheduler from '../components/reports/AutomatedReportScheduler';
 import AILeadScoring from '../components/ai/AILeadScoring';
-import AICommissionReconciliation from '../components/ai/AICommissionReconciliation';
 import AIChurnPrevention from '../components/ai/AIChurnPrevention';
 import CompetitiveBenchmark from '../components/analytics/CompetitiveBenchmark';
 import ROIDashboard from '../components/analytics/ROIDashboard';
 import CampaignManager from '../components/campaigns/CampaignManager';
 import AuditTrailViewer from '../components/compliance/AuditTrailViewer';
 import HierarchyManager from '../components/hierarchy/HierarchyManager';
-import IntelligentTaskEngine from '../components/automation/IntelligentTaskEngine';
 import AITaskAutomationEngine from '../components/automation/AITaskAutomationEngine';
 import CarrierAPIHub from '../components/integrations/CarrierAPIHub';
 import CRMIntegration from '../components/crm/CRMIntegration';
 import ESignatureIntegration from '../components/integrations/ESignatureIntegration';
 import WhiteLabelPortal from '../components/portal/WhiteLabelPortal';
 import AgentMobilePortal from '../components/mobile/AgentMobilePortal';
-import ProductionGoals from '../components/analytics/ProductionGoals';
 import TeamPerformanceMatrix from '../components/analytics/TeamPerformanceMatrix';
 import SmartNotifications from '../components/notifications/SmartNotifications';
 import AICoachingEngine from '../components/coaching/AICoachingEngine';
 import AdvancedTaskAutomation from '../components/automation/AdvancedTaskAutomation';
-import PredictiveAnalyticsDashboard from '../components/analytics/PredictiveAnalyticsDashboard';
 import AgentGamification from '../components/gamification/AgentGamification';
 import TerritoryManager from '../components/territory/TerritoryManager';
 import RegulatoryCalendar from '../components/compliance/RegulatoryCalendar';

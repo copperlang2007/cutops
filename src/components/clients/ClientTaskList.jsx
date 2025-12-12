@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Plus, Calendar, CheckCircle, Clock } from 'lucide-react';
-import { format } from 'date-fns';
-import { toast } from 'sonner';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Checkbox } from '@/components/ui/checkbox'
+import { Plus, Calendar, CheckCircle, Clock } from 'lucide-react'
+import { format } from 'date-fns'
 import TaskFormModal from '../tasks/TaskFormModal';
 
 export default function ClientTaskList({ clientId, tasks }) {

@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { AlertTriangle, Shield, TrendingUp, TrendingDown, Eye, CheckCircle, Loader2, Sparkles } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
-import { toast } from 'sonner';
-import { motion, AnimatePresence } from 'framer-motion';
-import { format, differenceInDays } from 'date-fns';
+import { useState } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { AlertTriangle, Shield, Eye, CheckCircle, Loader2, Sparkles } from 'lucide-react'
+import { base44 } from '@/api/base44Client'
+import { toast } from 'sonner'
+import { motion, AnimatePresence } from 'framer-motion'
+import { differenceInDays } from 'date-fns'
 
 export default function AIAnomalyDetection({ agents, commissions, appointments, contracts, onCreateAlert }) {
   const [anomalies, setAnomalies] = useState(null);

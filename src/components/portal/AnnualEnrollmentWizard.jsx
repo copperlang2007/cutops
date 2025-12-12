@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Label } from '@/components/ui/label';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
+import { Checkbox } from '@/components/ui/checkbox'
+import { Label } from '@/components/ui/label'
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { 
   Calendar, CheckCircle, ArrowRight, ArrowLeft, 
   AlertCircle, Phone, FileText, Loader2, Star, RefreshCw
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { differenceInDays, format } from 'date-fns';
-import { toast } from 'sonner';
+import { motion, AnimatePresence } from 'framer-motion'
+import { differenceInDays } from 'date-fns'
 
 const aepStart = new Date('2024-10-15');
 const aepEnd = new Date('2024-12-07');
@@ -295,7 +294,7 @@ Provide personalized AEP guidance:
                     </div>
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="maybe" id="explore_maybe" />
-                      <Label htmlFor="explore_maybe">Maybe, if there's something significantly better</Label>
+                      <Label htmlFor="explore_maybe">Maybe, if there&apos;s something significantly better</Label>
                     </div>
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="no" id="explore_no" />
@@ -310,7 +309,7 @@ Provide personalized AEP guidance:
           {step === 3 && (
             <Card className="border-0 shadow-sm dark:bg-slate-800">
               <CardHeader>
-                <CardTitle className="text-lg">What's Most Important To You?</CardTitle>
+                <CardTitle className="text-lg">What&apos;s Most Important To You?</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">

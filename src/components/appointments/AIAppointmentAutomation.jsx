@@ -1,22 +1,22 @@
-import React, { useState, useMemo, useEffect } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Label } from '@/components/ui/label';
+import { useState, useMemo } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog'
+import { Checkbox } from '@/components/ui/checkbox'
+import { Label } from '@/components/ui/label'
 import { 
   Sparkles, Building2, CheckCircle2, Clock, AlertTriangle, 
   FileText, Send, Loader2, ChevronRight, Target, Zap,
   Calendar, Bell, RefreshCw, Download, Rocket, ArrowRight,
   RotateCcw, ExternalLink, Mail, Phone, Shield
 } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
-import { toast } from 'sonner';
-import { motion, AnimatePresence } from 'framer-motion';
-import { format, addDays, differenceInDays } from 'date-fns';
+import { base44 } from '@/api/base44Client'
+import { toast } from 'sonner'
+import { motion, AnimatePresence } from 'framer-motion'
+import { format, addDays, differenceInDays } from 'date-fns'
 
 const CARRIER_MARKET_DATA = {
   'Aetna': { states: ['CA', 'TX', 'FL', 'NY', 'PA'], priority: 'high', avgProcessTime: 14, hasAPI: true, apiEndpoint: 'aetna-contracting', contactEmail: 'contracting@aetna.com', contactPhone: '1-800-555-0101' },

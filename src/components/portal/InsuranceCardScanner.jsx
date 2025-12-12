@@ -1,15 +1,15 @@
-import React, { useState, useRef } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { useState, useRef } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 import { 
   Camera, Upload, CreditCard, CheckCircle, Loader2, 
   Phone, Calendar, DollarSign, Building2, Shield, RefreshCw
 } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { toast } from 'sonner';
+import { motion } from 'framer-motion'
+import { toast } from 'sonner'
 
 export default function InsuranceCardScanner({ client, portalUser, onScanComplete }) {
   const queryClient = useQueryClient();

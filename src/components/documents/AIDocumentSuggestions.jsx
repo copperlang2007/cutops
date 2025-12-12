@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+import { useState, useEffect } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
 import { 
   Sparkles, FileText, CheckCircle2, AlertCircle, 
   Loader2, ChevronRight, Target, Clock, Shield
 } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
-import { toast } from 'sonner';
-import { motion } from 'framer-motion';
+import { base44 } from '@/api/base44Client'
+import { toast } from 'sonner'
+import { motion } from 'framer-motion'
 
 export default function AIDocumentSuggestions({ 
   agent, 

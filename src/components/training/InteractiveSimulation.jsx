@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Textarea } from '@/components/ui/textarea';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { Mic, Send, Loader2, Award, CheckCircle, X, ArrowRight, TrendingUp } from 'lucide-react';
-import { toast } from 'sonner';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Textarea } from '@/components/ui/textarea'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
+import { Mic, Loader2, Award, CheckCircle, ArrowRight, TrendingUp } from 'lucide-react'
 
 export default function InteractiveSimulation({ simulation, agentId, onComplete }) {
   const [sessionId, setSessionId] = useState(null);

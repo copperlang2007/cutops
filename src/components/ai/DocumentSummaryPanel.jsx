@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { FileText, Sparkles, Loader2, Calendar, AlertCircle, CheckCircle, Target } from 'lucide-react';
-import { toast } from 'sonner';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Sparkles, Loader2, Calendar, AlertCircle, CheckCircle, Target } from 'lucide-react'
+import { toast } from 'sonner'
 
 export default function DocumentSummaryPanel({ documentUrl, documentName, documentType, contentText }) {
   const [summary, setSummary] = useState(null);

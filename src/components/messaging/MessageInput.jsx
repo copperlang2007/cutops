@@ -1,9 +1,9 @@
-import React, { useState, useRef } from 'react';
-import { Button } from '@/components/ui/button';
-import { Textarea } from '@/components/ui/textarea';
-import { Send, Paperclip, Sparkles, X, Loader2 } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
-import { toast } from 'sonner';
+import { useState, useRef } from 'react'
+import { Button } from '@/components/ui/button'
+import { Textarea } from '@/components/ui/textarea'
+import { Send, Paperclip, Sparkles, X, Loader2 } from 'lucide-react'
+import { base44 } from '@/api/base44Client'
+import { toast } from 'sonner'
 
 export default function MessageInput({ 
   onSend, 

@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { FileText, Upload, Search, Filter, Grid, List, FolderOpen } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Badge } from "@/components/ui/badge"
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { FileText, Upload, Search, Grid, List, FolderOpen } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
 import DocumentCard from './DocumentCard';
 
-import { DOCUMENT_TYPES as BASE_DOCUMENT_TYPES, ALERT_THRESHOLDS, VERIFICATION_STATUS_CONFIG } from '../shared/constants';
+import { DOCUMENT_TYPES as BASE_DOCUMENT_TYPES, ALERT_THRESHOLDS } from '../shared/constants'
 
 const DOCUMENT_TYPES = [
   { value: 'all', label: 'All Types' },

@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Button } from '@/components/ui/button';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Textarea } from '@/components/ui/textarea';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Button } from '@/components/ui/button'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
 import { 
   Sparkles, FileText, Calendar, Hash, DollarSign, MapPin, 
   Loader2, CheckCircle, AlertTriangle, RefreshCw, Clock,
   TrendingUp, FileSearch
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { format, differenceInDays, addMonths } from 'date-fns';
+import { motion, AnimatePresence } from 'framer-motion'
+import { differenceInDays } from 'date-fns'
 
 export default function ContractAIAnalysis({ 
   contract, 

@@ -1,4 +1,3 @@
-import React from 'react';
 import RoleGuard from '../components/shared/RoleGuard';
 import AgreementComplianceDashboard from '../components/agreements/AgreementComplianceDashboard';
 

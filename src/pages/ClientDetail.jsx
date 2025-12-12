@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { useSearchParams, Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
+import { useSearchParams, Link } from 'react-router-dom'
+import { createPageUrl } from '@/utils'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 import { 
         ArrowLeft, Phone, Mail, MapPin, Calendar, FileText, 
         MessageSquare, CheckSquare, TrendingUp, Edit, User, Sparkles, Activity, FileSearch, Rocket, Star
       } from 'lucide-react';
-import { format } from 'date-fns';
+import { format } from 'date-fns'
 import ClientInteractionList from '../components/clients/ClientInteractionList';
 import ClientInteractionModal from '../components/clients/ClientInteractionModal';
 import ClientTaskList from '../components/clients/ClientTaskList';

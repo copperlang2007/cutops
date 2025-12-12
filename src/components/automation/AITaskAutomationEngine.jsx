@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Switch } from '@/components/ui/switch';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Switch } from '@/components/ui/switch'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { 
   Zap, Plus, Settings, Play, Pause, Loader2, CheckCircle,
   AlertTriangle, Shield, FileText, Users, Clock, Brain,
   RefreshCw, Target, TrendingDown, Calendar
 } from 'lucide-react';
-import { format, differenceInDays, addDays } from 'date-fns';
-import { toast } from 'sonner';
-import { motion, AnimatePresence } from 'framer-motion';
+import { differenceInDays, addDays } from 'date-fns'
+import { toast } from 'sonner'
+import { motion } from 'framer-motion'
 
 const TRIGGER_TYPES = [
   { value: 'license_expiring', label: 'License Expiring', icon: Shield, color: 'text-amber-600' },
@@ -315,7 +315,7 @@ Create a clear, specific task title and detailed description that includes:
                 </DialogTrigger>
                 <DialogContent className="max-w-lg">
                   <DialogHeader>
-                    <DialogTitle>{editingRule ? 'Edit' : 'Create'} Automation Rule</DialogTitle>
+                    <DialogTitle>{editingRule ? &apos;Edit&apos; : &apos;Create&apos;} Automation Rule</DialogTitle>
                   </DialogHeader>
                   <div className="space-y-4 mt-4">
                     <div>

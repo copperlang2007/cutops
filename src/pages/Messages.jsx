@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { useState, useEffect, useMemo } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Badge } from '@/components/ui/badge'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { 
   Search, Plus, Users, Settings, Bell, BellOff, 
   MoreVertical, Trash2, Archive, UserPlus, Loader2
@@ -16,8 +16,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { motion, AnimatePresence } from 'framer-motion';
-import { toast } from 'sonner';
+import { motion, AnimatePresence } from 'framer-motion'
 
 import ConversationList from '../components/messaging/ConversationList';
 import MessageList from '../components/messaging/MessageList';
@@ -87,7 +86,7 @@ export default function Messages() {
         queryClient.invalidateQueries(['conversations']);
       }
     }
-  }, [selectedConversation?.id, messages, currentUser?.email]);
+  }, [selectedConversation, selectedConversation?.id, messages, currentUser?.email, queryClient]);
 
   const sendMessageMutation = useMutation({
     mutationFn: async ({ content, replyToId, fileUrl, fileName }) => {

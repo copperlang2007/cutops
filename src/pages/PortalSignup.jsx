@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { base44 } from '@/api/base44Client';
 import { useMutation } from '@tanstack/react-query';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -250,8 +250,8 @@ export default function PortalSignup() {
                     <SelectTrigger><SelectValue /></SelectTrigger>
                     <SelectContent>
                       <SelectItem value="yes">Yes, I have Medicare</SelectItem>
-                      <SelectItem value="no">No, but I'm eligible soon</SelectItem>
-                      <SelectItem value="unknown">I'm not sure</SelectItem>
+                      <SelectItem value="no">No, but I&apos;m eligible soon</SelectItem>
+                      <SelectItem value="unknown">I&apos;m not sure</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

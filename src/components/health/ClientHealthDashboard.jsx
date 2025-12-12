@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation, useQuery } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { 
   Activity, Loader2, TrendingUp, Target, Users, Sparkles,
   AlertTriangle, CheckCircle2, BookOpen, MessageSquare
 } from 'lucide-react';
-import { toast } from 'sonner';
+import { toast } from 'sonner'
 import RequiredTrainingModal from '../training/RequiredTrainingModal';
 import ClientHealthScoreCard from './ClientHealthScoreCard';
 

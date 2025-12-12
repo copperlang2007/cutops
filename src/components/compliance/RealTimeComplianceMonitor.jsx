@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation } from '@tanstack/react-query';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { AlertTriangle, Shield, CheckCircle, Copy, X } from 'lucide-react';
-import { toast } from 'sonner';
+import { useState, useEffect } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation } from '@tanstack/react-query'
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { AlertTriangle, Shield, CheckCircle, Copy } from 'lucide-react'
+import { toast } from 'sonner'
 
 export default function RealTimeComplianceMonitor({ content, onChange, contextType = 'email', agentId, clientId }) {
   const [analysis, setAnalysis] = useState(null);

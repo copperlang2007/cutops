@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { 
   Star, TrendingUp, Users, Send, CheckCircle, 
   AlertCircle, MessageSquare, BarChart3, Sparkles
 } from 'lucide-react';
-import { format } from 'date-fns';
-import { toast } from 'sonner';
+import { format } from 'date-fns'
+import { toast } from 'sonner'
 
 export default function SurveyResultsDashboard({ agentId }) {
   const queryClient = useQueryClient();

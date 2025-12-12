@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Checkbox } from '@/components/ui/checkbox';
-import { FileText, Sparkles, Loader2, Download, Copy, Mail, Calendar } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
-import { toast } from 'sonner';
-import { motion } from 'framer-motion';
-import { format, subDays } from 'date-fns';
+import { useState } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Label } from '@/components/ui/label'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Checkbox } from '@/components/ui/checkbox'
+import { FileText, Sparkles, Loader2, Download, Copy } from 'lucide-react'
+import { base44 } from '@/api/base44Client'
+import { toast } from 'sonner'
+import { motion } from 'framer-motion'
+import { format, subDays } from 'date-fns'
 import ReactMarkdown from 'react-markdown';
 
 export default function AIReportGenerator({ agents, commissions, contracts, licenses, carriers }) {

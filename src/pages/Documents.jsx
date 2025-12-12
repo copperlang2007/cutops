@@ -1,19 +1,18 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { createPageUrl } from '@/utils';
-import { FileText, Upload, Search, Users, Sparkles } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import { motion } from 'framer-motion';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { FileText, Upload, Search, Users, Sparkles } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
+import { motion } from 'framer-motion'
 import DocumentCard from '../components/documents/DocumentCard';
 import DocumentUploadModal from '../components/documents/DocumentUploadModal';
 import DocumentVerificationModal from '../components/documents/DocumentVerificationModal';
 import EnhancedDocumentManager from '../components/documents/EnhancedDocumentManager';
-import { DOCUMENT_TYPES as BASE_DOCUMENT_TYPES, ALERT_THRESHOLDS } from '../components/shared/constants';
+import { DOCUMENT_TYPES as BASE_DOCUMENT_TYPES, ALERT_THRESHOLDS } from '../components/shared/constants'
 import AIDocumentSearchPanel from '../components/documents/AIDocumentSearchPanel';
 import AIDocumentUploadEnhanced from '../components/documents/AIDocumentUploadEnhanced';
 

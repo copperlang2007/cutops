@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Checkbox } from '@/components/ui/checkbox';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { Progress } from '@/components/ui/progress';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Checkbox } from '@/components/ui/checkbox'
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
+import { Progress } from '@/components/ui/progress'
 import { 
   ClipboardCheck, ArrowRight, ArrowLeft, CheckCircle, 
   Star, DollarSign, Heart, Pill, Stethoscope, Loader2,
   Phone, Monitor, AlertCircle, Sparkles
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { toast } from 'sonner';
+import { motion, AnimatePresence } from 'framer-motion'
+import { toast } from 'sonner'
 
 const steps = [
   { id: 'health', title: 'Health Status', icon: Heart },
@@ -330,7 +330,7 @@ Return as JSON:
                 </div>
 
                 <div>
-                  <Label className="text-base mb-3 block">Add your preferred doctors (we'll check network status)</Label>
+                  <Label className="text-base mb-3 block">Add your preferred doctors (we&apos;ll check network status)</Label>
                   <div className="flex gap-2">
                     <Input 
                       value={newDoctor}
@@ -385,7 +385,7 @@ Return as JSON:
                 </div>
 
                 <div>
-                  <Label className="text-base mb-3 block">List your medications (we'll check coverage)</Label>
+                  <Label className="text-base mb-3 block">List your medications (we&apos;ll check coverage)</Label>
                   <div className="flex gap-2">
                     <Input 
                       value={newMed}
@@ -423,7 +423,7 @@ Return as JSON:
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
-                  <Label className="text-base mb-3 block">What's most important in your plan?</Label>
+                  <Label className="text-base mb-3 block">What&apos;s most important in your plan?</Label>
                   <RadioGroup value={answers.budgetPreference} onValueChange={(v) => updateAnswer('budgetPreference', v)}>
                     {[
                       { value: 'low_premium', label: 'Lowest monthly premium', desc: 'Higher costs when I use services' },

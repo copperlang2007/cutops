@@ -1,20 +1,19 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Progress } from '@/components/ui/progress';
-import { ScrollArea } from '@/components/ui/scroll-area';
+import { useState, useEffect, useRef } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Input } from '@/components/ui/input'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { ScrollArea } from '@/components/ui/scroll-area'
 import { 
   Sparkles, Loader2, Send, Bot, User, CheckCircle2, 
   AlertTriangle, Clock, Zap, Target, MessageSquare, 
   ListTodo, Flag, ArrowRight, RefreshCw, Brain,
   FileText, Shield, Award, GraduationCap, Building2
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { format, differenceInDays } from 'date-fns';
+import { motion, AnimatePresence } from 'framer-motion'
+import { differenceInDays } from 'date-fns'
 
 const ONBOARDING_STAGES = {
   initial_setup: { order: 1, label: 'Initial Setup', items: ['w9_form', 'direct_deposit', 'id_verification'] },

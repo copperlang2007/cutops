@@ -1,4 +1,3 @@
-import React from 'react';
 import { createPageUrl } from '@/utils';
 import { Link } from 'react-router-dom';
 import { format, differenceInDays } from 'date-fns';

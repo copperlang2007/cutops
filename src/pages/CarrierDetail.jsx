@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { Link } from 'react-router-dom'
+import { createPageUrl } from '@/utils'
 import { 
   ArrowLeft, Building2, Globe, Phone, Mail, ExternalLink, 
   Edit, Users, MapPin, GraduationCap, CheckCircle 
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
-import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Dialog, DialogContent } from '@/components/ui/dialog'
+import { motion } from 'framer-motion'
 import CarrierForm from '../components/carriers/CarrierForm';
 import AgentCard from '../components/agents/AgentCard';
 import CarrierRelationshipInsights from '../components/carriers/CarrierRelationshipInsights';

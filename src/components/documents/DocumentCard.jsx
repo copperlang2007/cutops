@@ -1,7 +1,6 @@
-import React from 'react';
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { 
   FileText, Download, ExternalLink, Trash2, CheckCircle, 
   Clock, AlertTriangle, MoreVertical, Eye, Shield
@@ -13,10 +12,10 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { format, differenceInDays } from "date-fns";
-import { motion } from "framer-motion";
+import { format, differenceInDays } from "date-fns"
+import { motion } from "framer-motion"
 
-import { DOCUMENT_TYPES, ALERT_THRESHOLDS, VERIFICATION_STATUS_CONFIG } from '../shared/constants';
+import { DOCUMENT_TYPES, ALERT_THRESHOLDS, VERIFICATION_STATUS_CONFIG } from '../shared/constants'
 
 // Create lookup map from DOCUMENT_TYPES array
 const DOCUMENT_TYPE_LABELS = DOCUMENT_TYPES.reduce((acc, type) => {

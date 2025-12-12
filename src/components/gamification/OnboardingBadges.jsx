@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { useState } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
 import { 
   Award, Zap, FileCheck, Shield, GraduationCap, 
   Building2, Rocket, Star, Trophy, CheckCircle2, Lock
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { format } from 'date-fns';
+import { motion, AnimatePresence } from 'framer-motion'
+import { format } from 'date-fns'
 
 const BADGE_CONFIG = {
   quick_starter: { 

@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { base44 } from '@/api/base44Client';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Progress } from '@/components/ui/progress';
-import { Sparkles, Loader2, Mail, BookOpen, CheckSquare, Send } from 'lucide-react';
-import { toast } from 'sonner';
-import { motion } from 'framer-motion';
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { base44 } from '@/api/base44Client'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Checkbox } from '@/components/ui/checkbox'
+import { Progress } from '@/components/ui/progress'
+import { Sparkles, Loader2, Mail, BookOpen, CheckSquare, Send } from 'lucide-react'
+import { toast } from 'sonner'
+import { motion } from 'framer-motion'
 
 export default function AIOnboardingPlanPanel({ clientId, clientEmail }) {
   const queryClient = useQueryClient();

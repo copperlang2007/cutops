@@ -1,16 +1,16 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
-import { ScrollArea } from '@/components/ui/scroll-area';
+import { useState, useEffect, useRef } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Badge } from '@/components/ui/badge'
+import { ScrollArea } from '@/components/ui/scroll-area'
 import { 
   MessageSquare, Send, Sparkles, Loader2, BookOpen, 
   BarChart3, Bell, User, Bot, X, Minimize2, Maximize2 
 } from 'lucide-react';
-import { toast } from 'sonner';
+import { toast } from 'sonner'
 import ReactMarkdown from 'react-markdown';
 
 export default function AssistantChat({ isMinimized: externalMinimized, onToggleMinimize }) {

@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import { format, isToday, isYesterday } from 'date-fns';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { Badge } from '@/components/ui/badge';
-import { Bot, FileText, Reply } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { format, isToday, isYesterday } from 'date-fns'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
+import { Badge } from '@/components/ui/badge'
+import { Bot, FileText, Reply } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 function formatMessageDate(date) {
   const d = new Date(date);

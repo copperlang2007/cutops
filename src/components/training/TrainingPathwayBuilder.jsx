@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
-import { Target, Plus, Trash2, Edit, GripVertical } from 'lucide-react';
-import { toast } from 'sonner';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Target, Plus, Trash2, Edit } from 'lucide-react'
+import { toast } from 'sonner'
 import TrainingPathwayModal from './TrainingPathwayModal';
-import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
 export default function TrainingPathwayBuilder() {
   const queryClient = useQueryClient();

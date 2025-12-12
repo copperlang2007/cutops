@@ -1,19 +1,18 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { 
   AlertTriangle, TrendingUp, TrendingDown, Users, Loader2, 
   Mail, Phone, Sparkles, DollarSign, RefreshCw, Target,
   ArrowUpRight, Clock, Star, Send
 } from 'lucide-react';
-import { differenceInDays, format } from 'date-fns';
-import { toast } from 'sonner';
-import { motion } from 'framer-motion';
+import { differenceInDays } from 'date-fns'
+import { toast } from 'sonner'
+import { motion } from 'framer-motion'
 
 export default function ClientChurnAnalysis({ 
   clients, 
@@ -258,7 +257,7 @@ Create a warm, personalized email that:
             className="bg-teal-600 hover:bg-teal-700"
           >
             {isAnalyzing ? <Loader2 className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
-            <span className="ml-1">{isAnalyzing ? 'Analyzing...' : 'Analyze Clients'}</span>
+            <span className="ml-1">{isAnalyzing ? &apos;Analyzing...&apos; : &apos;Analyze Clients&apos;}</span>
           </Button>
         </div>
       </CardHeader>
@@ -337,7 +336,7 @@ Create a warm, personalized email that:
                       </div>
                     </div>
                     <div className="text-xs text-slate-500 space-y-1">
-                      <p><strong>Risk factors:</strong> {client.risk_factors?.join(', ')}</p>
+                      <p><strong>Risk factors:</strong> {client.risk_factors?.join(&apos;, &apos;)}</p>
                       <p><strong>Strategy:</strong> {client.retention_strategy}</p>
                     </div>
                   </motion.div>

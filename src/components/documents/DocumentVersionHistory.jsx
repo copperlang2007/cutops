@@ -1,11 +1,10 @@
-import React from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery } from '@tanstack/react-query';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { History, Download, Eye, CheckCircle, Clock } from 'lucide-react';
-import { format } from 'date-fns';
+import { base44 } from '@/api/base44Client'
+import { useQuery } from '@tanstack/react-query'
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { History, Download, Eye, CheckCircle, Clock } from 'lucide-react'
+import { format } from 'date-fns'
 
 export default function DocumentVersionHistory({ document, open, onClose }) {
   const { data: versions = [], isLoading } = useQuery({

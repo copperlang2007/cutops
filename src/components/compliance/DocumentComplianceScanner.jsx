@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Upload, FileText, Shield, AlertTriangle, CheckCircle, Loader2, Eye } from 'lucide-react';
-import { toast } from 'sonner';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Upload, FileText, Shield, AlertTriangle, CheckCircle, Loader2 } from 'lucide-react'
+import { toast } from 'sonner'
 
 export default function DocumentComplianceScanner({ agentId, onScanComplete }) {
   const queryClient = useQueryClient();

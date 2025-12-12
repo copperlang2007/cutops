@@ -1,14 +1,13 @@
-import React from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Shield, AlertTriangle, CheckCircle, Clock, TrendingUp, FileText } from 'lucide-react';
-import { format } from 'date-fns';
-import { toast } from 'sonner';
-import { motion } from 'framer-motion';
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Shield, AlertTriangle, CheckCircle, Clock } from 'lucide-react'
+import { format } from 'date-fns'
+import { toast } from 'sonner'
+import { motion } from 'framer-motion'
 
 export default function ComplianceDashboard() {
   const queryClient = useQueryClient();
@@ -132,7 +131,7 @@ export default function ComplianceDashboard() {
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-2">
                           <Badge className={getSeverityColor(flag.severity)}>{flag.severity}</Badge>
-                          <Badge variant="outline">{flag.violation_type.replace(/_/g, ' ')}</Badge>
+                          <Badge variant="outline">{flag.violation_type.replace(/_/g, &apos; &apos;)}</Badge>
                           <Badge variant="outline">{flag.source_type}</Badge>
                         </div>
                         <p className="text-sm font-medium text-slate-900 dark:text-white mb-2">
@@ -204,9 +203,9 @@ export default function ComplianceDashboard() {
                     <div>
                       <Badge className="bg-red-100 text-red-700 mb-2">CRITICAL</Badge>
                       <p className="font-medium text-slate-900 dark:text-white">{flag.description}</p>
-                      <p className="text-sm text-slate-500 mt-1">{format(new Date(flag.created_date), 'MMM d, yyyy h:mm a')}</p>
+                      <p className="text-sm text-slate-500 mt-1">{format(new Date(flag.created_date), &apos;MMM d, yyyy h:mm a&apos;)}</p>
                     </div>
-                    <Badge className={getStatusColor(flag.status)}>{flag.status.replace(/_/g, ' ')}</Badge>
+                    <Badge className={getStatusColor(flag.status)}>{flag.status.replace(/_/g, &apos; &apos;)}</Badge>
                   </div>
                   <p className="text-sm text-red-700 dark:text-red-300 bg-red-50 dark:bg-red-900/20 p-2 rounded">
                     "{flag.flagged_content}"
@@ -227,10 +226,10 @@ export default function ComplianceDashboard() {
                       <Badge className={getSeverityColor(flag.severity)}>{flag.severity}</Badge>
                       <div>
                         <p className="text-sm font-medium text-slate-900 dark:text-white">{flag.description}</p>
-                        <p className="text-xs text-slate-500">{format(new Date(flag.created_date), 'MMM d, yyyy')}</p>
+                        <p className="text-xs text-slate-500">{format(new Date(flag.created_date), &apos;MMM d, yyyy&apos;)}</p>
                       </div>
                     </div>
-                    <Badge className={getStatusColor(flag.status)}>{flag.status.replace(/_/g, ' ')}</Badge>
+                    <Badge className={getStatusColor(flag.status)}>{flag.status.replace(/_/g, &apos; &apos;)}</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -248,7 +247,7 @@ export default function ComplianceDashboard() {
                 <div className="space-y-2">
                   {Object.entries(violationTypes).sort((a, b) => b[1] - a[1]).map(([type, count]) => (
                     <div key={type} className="flex items-center justify-between">
-                      <span className="text-sm text-slate-700 dark:text-slate-300">{type.replace(/_/g, ' ')}</span>
+                      <span className="text-sm text-slate-700 dark:text-slate-300">{type.replace(/_/g, &apos; &apos;)}</span>
                       <Badge variant="outline">{count}</Badge>
                     </div>
                   ))}

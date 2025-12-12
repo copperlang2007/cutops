@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { useState } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Badge } from '@/components/ui/badge'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { 
   Users, Plus, Search, Phone, Mail, Calendar, Star, 
   ChevronRight, Filter, AlertCircle
 } from 'lucide-react';
-import { format, differenceInDays } from 'date-fns';
-import { motion, AnimatePresence } from 'framer-motion';
+import { format, differenceInDays } from 'date-fns'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const statusColors = {
   active: 'bg-emerald-100 text-emerald-700',

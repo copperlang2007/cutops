@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { 
   TrendingUp, TrendingDown, Users, Loader2, Sparkles,
   DollarSign, RefreshCw, Target, ArrowUpRight, Send,
   AlertTriangle, Star, Clock, Mail
 } from 'lucide-react';
-import { differenceInDays, format } from 'date-fns';
-import { toast } from 'sonner';
-import { motion } from 'framer-motion';
+import { differenceInDays } from 'date-fns'
+import { toast } from 'sonner'
+import { motion } from 'framer-motion'
 
 export default function AIClientAnalytics({ 
   clients, 

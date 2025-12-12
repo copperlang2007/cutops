@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
 import { 
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar
@@ -11,7 +11,7 @@ import {
 import { 
   Trophy, Sparkles, Loader2, TrendingUp, Users, Target
 } from 'lucide-react';
-import { toast } from 'sonner';
+import { toast } from 'sonner'
 
 export default function CompetitiveBenchmark({ agents, licenses, contracts, commissions }) {
   const [benchmark, setBenchmark] = useState(null);

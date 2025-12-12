@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { 
   Plug, RefreshCw, CheckCircle, AlertTriangle, Clock,
   DollarSign, FileText, GraduationCap, Users, Loader2,
   Link2, Sparkles, Target, BookOpen, Play
 } from 'lucide-react';
-import { format, addDays } from 'date-fns';
-import { toast } from 'sonner';
+import { addDays } from 'date-fns'
+import { toast } from 'sonner'
 
 const CARRIERS = [
   { id: 'humana', name: 'Humana', logo: '🏥', color: 'bg-green-500' },

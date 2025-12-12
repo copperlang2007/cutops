@@ -1,19 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
+import { useState, useEffect } from 'react'
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
 import { 
   Play, Pause, SkipForward, RotateCcw, CheckCircle, 
   ChevronRight, ChevronLeft, Sparkles, Target, Zap,
   Users, Shield, DollarSign, Trophy, FileText, MessageSquare,
   Settings, Eye, X
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { createPageUrl } from '@/utils';
-import { toast } from 'sonner';
+import { motion, AnimatePresence } from 'framer-motion'
+import { createPageUrl } from '@/utils'
+import { toast } from 'sonner'
 
 const generateDemoData = async (scope = 'full') => {
   try {

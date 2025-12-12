@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation, useQuery } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
 import { 
   Sparkles, Loader2, DollarSign, FileText, CheckCircle, 
   AlertCircle, ArrowRight, Shield, TrendingUp, ExternalLink, HelpCircle
 } from 'lucide-react';
-import { toast } from 'sonner';
-import { motion, AnimatePresence } from 'framer-motion';
+import { toast } from 'sonner'
+import { motion, AnimatePresence } from 'framer-motion'
 import {
   Select,
   SelectContent,
@@ -375,7 +375,7 @@ export default function GovtBenefitsScreening({ portalUser }) {
           </DialogHeader>
           <div className="space-y-4">
             <div className="p-4 clay-subtle rounded-xl">
-              <h4 className="font-bold text-slate-900 dark:text-white mb-2">What You'll Need:</h4>
+              <h4 className="font-bold text-slate-900 dark:text-white mb-2">What You&apos;ll Need:</h4>
               <ul className="space-y-2">
                 {selectedProgram?.eligibility_factors?.missing_info?.length > 0 ? (
                   selectedProgram.eligibility_factors.missing_info.map((info, i) => (

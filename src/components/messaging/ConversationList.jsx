@@ -1,4 +1,3 @@
-import React from 'react';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { Users, MessageCircle } from 'lucide-react';

@@ -1,13 +1,12 @@
-import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Progress } from '@/components/ui/progress'
+import { Badge } from '@/components/ui/badge'
 import { 
   DollarSign, Activity, Pill, Stethoscope, Eye, 
   Ear, Heart, Calendar, TrendingUp, AlertTriangle
 } from 'lucide-react';
-import { format, differenceInDays, startOfYear, endOfYear } from 'date-fns';
-import { motion } from 'framer-motion';
+import { format, differenceInDays, startOfYear, endOfYear } from 'date-fns'
+import { motion } from 'framer-motion'
 
 export default function BenefitUsageDashboard({ client }) {
   // Simulated benefit usage data - in production this would come from claims data

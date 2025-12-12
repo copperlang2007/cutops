@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { useMutation } from '@tanstack/react-query';
-import { base44 } from '@/api/base44Client';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Sparkles, Loader2, Send, Copy, Mail, MessageSquare } from 'lucide-react';
-import { toast } from 'sonner';
+import { useState } from 'react'
+import { useMutation } from '@tanstack/react-query'
+import { base44 } from '@/api/base44Client'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Label } from '@/components/ui/label'
+import { Textarea } from '@/components/ui/textarea'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Sparkles, Loader2, Send, Copy } from 'lucide-react'
+import { toast } from 'sonner'
 
 export default function ProactiveMessageGenerator({ clientId, clientEmail }) {
   const [outreachReason, setOutreachReason] = useState('');

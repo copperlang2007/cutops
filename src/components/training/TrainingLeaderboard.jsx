@@ -1,11 +1,10 @@
-import React, { useMemo } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { Trophy, Medal, Award, TrendingUp, Zap } from 'lucide-react';
-import { Progress } from '@/components/ui/progress';
+import { useMemo } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+import { Avatar, AvatarFallback } from '@/components/ui/avatar'
+import { Trophy, Medal, Award, Zap } from 'lucide-react'
 
 export default function TrainingLeaderboard() {
   const { data: agents = [] } = useQuery({

@@ -1,21 +1,20 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { createPageUrl } from '@/utils';
-import { Link } from 'react-router-dom';
-import { format, differenceInDays } from 'date-fns';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { createPageUrl } from '@/utils'
+import { Link } from 'react-router-dom'
 import { 
   ArrowLeft, User, Mail, Phone, MapPin, Calendar, Hash, 
   Shield, FileCheck, AlertTriangle, Edit, CheckCircle, 
   Clock, RefreshCw, Zap, FileText, FileSignature, Sparkles, Trophy, UserX
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { motion } from 'framer-motion';
-import { toast } from 'sonner';
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Card, CardContent } from '@/components/ui/card'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { motion } from 'framer-motion'
+import { toast } from 'sonner'
 import LicenseTable from '../components/licenses/LicenseTable';
 import AppointmentTable from '../components/appointments/AppointmentTable';
 import AlertsList from '../components/dashboard/AlertsList';
@@ -44,7 +43,7 @@ import OnboardingBadges from '../components/gamification/OnboardingBadges';
 import OnboardingLeaderboard from '../components/gamification/OnboardingLeaderboard';
 import CelebrationAnimation from '../components/gamification/CelebrationAnimation';
 import ProgressRing from '../components/gamification/ProgressRing';
-import { checkAndAwardBadges } from '../components/gamification/badgeService';
+import { checkAndAwardBadges } from '../components/gamification/badgeService'
 import NIPRVerificationService from '../components/compliance/NIPRVerificationService';
 import AITrainingGenerator from '../components/training/AITrainingGenerator';
 import AIVoiceChat from '../components/ai/AIVoiceChat';
@@ -75,7 +74,7 @@ import AgencyAgreementView from '../components/agreements/AgencyAgreementView';
 import AgentCoachingPanel from '../components/coaching/AgentCoachingPanel';
 import OffboardingWorkflow from '../components/offboarding/OffboardingWorkflow';
 
-import { STATUS_CONFIG, CONTRACTING_STATUS_CONFIG } from '../components/shared/constants';
+import { STATUS_CONFIG, CONTRACTING_STATUS_CONFIG } from '../components/shared/constants'
 
 const statusConfig = STATUS_CONFIG;
 

@@ -1,21 +1,19 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { createPageUrl } from '@/utils';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import { 
   FileSignature, Search, Filter, X, Users, Building2, 
   AlertTriangle, CheckCircle, Clock, Send, Sparkles
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Card, CardContent } from '@/components/ui/card';
-import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Badge } from '@/components/ui/badge'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Card, CardContent } from '@/components/ui/card'
+import { motion } from 'framer-motion'
 import ContractCard from '../components/contracts/ContractCard';
 import ContractFormModal from '../components/contracts/ContractFormModal';
-import { CONTRACT_STATUSES, CONTRACT_STATUS_CONFIG } from '../components/shared/constants';
 import ContractComplianceMonitor from '../components/contracts/ContractComplianceMonitor';
 import AIContractAnalyzer from '../components/contracts/AIContractAnalyzer';
 

@@ -1,14 +1,14 @@
-import React, { useState, useMemo } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Progress } from '@/components/ui/progress';
+import { useState, useMemo } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Input } from '@/components/ui/input'
+import { Progress } from '@/components/ui/progress'
 import { 
   Target, TrendingUp, Award, Calendar, Edit, CheckCircle,
   AlertTriangle
 } from 'lucide-react';
-import { differenceInDays, endOfMonth, startOfMonth, format } from 'date-fns';
+import { differenceInDays, endOfMonth, startOfMonth, format } from 'date-fns'
 
 export default function ProductionGoals({ agent, policies, commissions }) {
   const [goals, setGoals] = useState({

@@ -1,15 +1,14 @@
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
 import { 
   Shield, Sparkles, TrendingUp, Users, Brain, Bell, 
   CheckCircle, ArrowRight, BarChart3, FileText, Calendar,
   Heart, Zap, DollarSign, BookOpen, Trophy
 } from 'lucide-react';
-import { createPageUrl } from '@/utils';
-import { base44 } from '@/api/base44Client';
-import { motion } from 'framer-motion';
+import { createPageUrl } from '@/utils'
+import { base44 } from '@/api/base44Client'
+import { motion } from 'framer-motion'
 
 const features = [
   {

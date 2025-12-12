@@ -1,18 +1,17 @@
-import React from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+import { base44 } from '@/api/base44Client'
+import { useMutation } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
 import { 
   CheckCircle, Circle, Clock, ArrowRight, 
   Mail, Phone, FileText, Calendar, Shield, 
   Star, Rocket
 } from 'lucide-react';
-import { format, differenceInDays } from 'date-fns';
-import { motion } from 'framer-motion';
-import { toast } from 'sonner';
+import { format, differenceInDays } from 'date-fns'
+import { motion } from 'framer-motion'
+import { toast } from 'sonner'
 
 const taskTypeIcons = {
   welcome_email: Mail,

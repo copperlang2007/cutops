@@ -1,19 +1,18 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import {
   FileSignature, DollarSign, Calendar, Clock, 
   CheckCircle, AlertTriangle, Shield, Target,
   Building2, FileText, Download, Eye, Plus,
   TrendingUp, Briefcase, Scale, MapPin
 } from 'lucide-react';
-import { format, differenceInDays, addMonths } from 'date-fns';
-import { motion } from 'framer-motion';
+import { format, differenceInDays } from 'date-fns'
+import { motion } from 'framer-motion'
 import AgencyAgreementFormModal from './AgencyAgreementFormModal';
 
 const statusConfig = {

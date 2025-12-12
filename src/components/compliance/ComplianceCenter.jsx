@@ -1,17 +1,17 @@
-import React, { useState, useMemo } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Progress } from '@/components/ui/progress';
+import { useState, useMemo } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Progress } from '@/components/ui/progress'
 import { 
   Shield, AlertTriangle, Clock, CheckCircle, Calendar, FileText, 
   GraduationCap, Bell, Sparkles, Loader2, RefreshCw, ChevronRight
 } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
-import { toast } from 'sonner';
-import { motion } from 'framer-motion';
-import { format, differenceInDays, addDays } from 'date-fns';
+import { base44 } from '@/api/base44Client'
+import { toast } from 'sonner'
+import { motion } from 'framer-motion'
+import { format, differenceInDays } from 'date-fns'
 
 export default function ComplianceCenter({ 
   agents, 

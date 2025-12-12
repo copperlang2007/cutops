@@ -1,15 +1,14 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
+import { useState, useRef, useEffect } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
 import { 
   Bot, Send, User, Loader2, X, 
   Sparkles, MessageSquare, HelpCircle,
   Shield, Calendar, DollarSign, Phone
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion'
 import ReactMarkdown from 'react-markdown';
 
 const quickQuestions = [

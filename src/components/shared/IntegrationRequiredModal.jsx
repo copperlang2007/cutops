@@ -1,14 +1,12 @@
-import React from 'react';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent } from '@/components/ui/card';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
 import { 
   Link2, ExternalLink, Key, Settings, CheckCircle, 
   AlertTriangle, ArrowRight, Copy, Info
 } from 'lucide-react';
-import { toast } from 'sonner';
-import { createPageUrl } from '@/utils';
+import { toast } from 'sonner'
+import { createPageUrl } from '@/utils'
 
 const INTEGRATION_CONFIGS = {
   nipr: {

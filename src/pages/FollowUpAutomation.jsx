@@ -1,11 +1,10 @@
-import React from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Zap, Play, TrendingUp, Users, Sparkles } from 'lucide-react';
-import { toast } from 'sonner';
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Zap, Play, TrendingUp, Users } from 'lucide-react'
+import { toast } from 'sonner'
 import FollowUpSequenceManager from '../components/followup/FollowUpSequenceManager';
 import ActiveFollowUpsPanel from '../components/followup/ActiveFollowUpsPanel';
 import ProactiveOutreachPanel from '../components/followup/ProactiveOutreachPanel';

@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { BookOpen, GraduationCap, Target, Sparkles, Users, Trophy } from 'lucide-react';
-import { useUserRole } from '@/components/shared/RoleGuard';
-import { hasTrainingPermission } from '../components/training/trainingPermissions';
+import { base44 } from '@/api/base44Client'
+import { useQuery } from '@tanstack/react-query'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { BookOpen, GraduationCap, Target, Sparkles, Users, Trophy } from 'lucide-react'
+import { useUserRole } from '@/components/shared/RoleGuard'
+import { hasTrainingPermission } from '../components/training/trainingPermissions'
 import TrainingLibrary from '../components/training/TrainingLibrary';
 import TrainingPathwayBuilder from '../components/training/TrainingPathwayBuilder';
 import AITrainingCreator from '../components/training/AITrainingCreator';

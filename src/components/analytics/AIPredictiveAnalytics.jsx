@@ -1,10 +1,9 @@
-import React, { useState, useMemo } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Progress } from '@/components/ui/progress';
+import { useState, useMemo } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { 
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   AreaChart, Area, BarChart, Bar
@@ -13,8 +12,7 @@ import {
   TrendingUp, Sparkles, Loader2, RefreshCw, Users, DollarSign,
   AlertTriangle, Calendar, Target, UserMinus, Shield
 } from 'lucide-react';
-import { format, addMonths } from 'date-fns';
-import { toast } from 'sonner';
+import { toast } from 'sonner'
 
 export default function AIPredictiveAnalytics({ 
   agents, 

@@ -1,11 +1,10 @@
-import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
 import { 
   Shield, Calendar, DollarSign, Building2, 
   User, Phone, MapPin, CreditCard, FileText
 } from 'lucide-react';
-import { format, differenceInDays } from 'date-fns';
+import { format, differenceInDays } from 'date-fns'
 
 export default function ClientPortalPolicyView({ client, agent }) {
   if (!client) return null;

@@ -1,19 +1,19 @@
 
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { createPageUrl } from '@/utils'
 import { 
   LayoutDashboard, Users, Building2, FileSignature, FileText, 
   BarChart3, CheckSquare, Bell, Trophy, BookOpen, MessageSquare,
   DollarSign, Settings, ChevronLeft, ChevronRight, Shield, Menu,
   Eye, UserCog, Briefcase, Zap
 } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useUserRole } from '@/components/shared/RoleGuard';
+import { cn } from '@/lib/utils'
+import { motion, AnimatePresence } from 'framer-motion'
+import { useUserRole } from '@/components/shared/RoleGuard'
 import AssistantChat from '@/components/ai/AssistantChat';
 import ThemeToggle from '@/components/shared/ThemeToggle';
-import { base44 } from '@/api/base44Client';
+import { base44 } from '@/api/base44Client'
 
 const menuGroups = [
   {

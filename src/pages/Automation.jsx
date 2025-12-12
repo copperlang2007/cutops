@@ -1,4 +1,3 @@
-import React from 'react';
 import RoleGuard from '@/components/shared/RoleGuard';
 import WorkflowAutomationDashboard from '@/components/automation/WorkflowAutomationDashboard';
 

@@ -1,10 +1,10 @@
-import React, { useState, useMemo } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { useState, useMemo } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { 
   LineChart, Line, AreaChart, Area, BarChart, Bar, XAxis, YAxis, 
   CartesianGrid, Tooltip, ResponsiveContainer, Legend, RadarChart,
@@ -15,8 +15,8 @@ import {
   DollarSign, Shield, AlertTriangle, Calendar, Target, Zap,
   Clock, CheckCircle, Activity
 } from 'lucide-react';
-import { format, addMonths, subMonths, differenceInDays, startOfMonth, endOfMonth } from 'date-fns';
-import { toast } from 'sonner';
+import { format, subMonths, differenceInDays, startOfMonth, endOfMonth } from 'date-fns'
+import { toast } from 'sonner'
 
 export default function ExpandedPredictiveAnalytics({ 
   agents, 
@@ -373,8 +373,8 @@ Be specific with dates, names, and numbers.`,
                       </div>
                     </div>
                     <div className="text-xs text-slate-600">
-                      <p className="mb-1">Key Factors: {agent.key_factors?.join(', ')}</p>
-                      <p>Actions: {agent.recommended_actions?.slice(0, 2).join('; ')}</p>
+                      <p className="mb-1">Key Factors: {agent.key_factors?.join(&apos;, &apos;)}</p>
+                      <p>Actions: {agent.recommended_actions?.slice(0, 2).join(&apos;; &apos;)}</p>
                     </div>
                   </div>
                 ))}
@@ -407,9 +407,9 @@ Be specific with dates, names, and numbers.`,
                         <span className="text-sm font-medium">{risk.days_until_issue} days</span>
                       </div>
                     </div>
-                    <p className="text-xs mb-2">Issues: {risk.specific_items?.join(', ')}</p>
+                    <p className="text-xs mb-2">Issues: {risk.specific_items?.join(&apos;, &apos;)}</p>
                     <div className="flex items-center justify-between">
-                      <p className="text-xs text-slate-600">Actions: {risk.preventive_actions?.slice(0, 2).join('; ')}</p>
+                      <p className="text-xs text-slate-600">Actions: {risk.preventive_actions?.slice(0, 2).join(&apos;; &apos;)}</p>
                       {risk.auto_task_recommended && (
                         <Button 
                           size="sm" 

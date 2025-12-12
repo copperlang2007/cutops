@@ -1,25 +1,25 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Progress } from '@/components/ui/progress';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { Alert, AlertDescription } from '@/components/ui/alert';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Progress } from '@/components/ui/progress'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
+import { Alert, AlertDescription } from '@/components/ui/alert'
 import { 
   HandHeart, DollarSign, FileText, CheckCircle, Clock,
   AlertCircle, ArrowRight, Loader2, Calendar, Search,
   XCircle, RefreshCw, Bell, HelpCircle, Sparkles, MapPin
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { format, differenceInDays, addDays } from 'date-fns';
-import { toast } from 'sonner';
+import { motion, AnimatePresence } from 'framer-motion'
+import { format, differenceInDays } from 'date-fns'
+import { toast } from 'sonner'
 
 const benefitPrograms = [
   {
@@ -376,7 +376,7 @@ Return as JSON:
                           <div className="mt-4">
                             <div className="flex items-center justify-between text-xs text-slate-500 mb-1">
                               <span>Application Progress</span>
-                              <span>Est. {app.status === 'submitted' ? '2-4 weeks' : '4-6 weeks'}</span>
+                              <span>Est. {app.status === &apos;submitted&apos; ? &apos;2-4 weeks&apos; : &apos;4-6 weeks&apos;}</span>
                             </div>
                             <Progress value={app.status === 'submitted' ? 40 : 60} className="h-2" />
                           </div>
@@ -540,7 +540,7 @@ Return as JSON:
                         <SelectTrigger><SelectValue /></SelectTrigger>
                         <SelectContent>
                           {[1,2,3,4,5,6,7,8].map(n => (
-                            <SelectItem key={n} value={n.toString()}>{n} person{n > 1 ? 's' : ''}</SelectItem>
+                            <SelectItem key={n} value={n.toString()}>{n} person{n > 1 ? &apos;s&apos; : &apos;&apos;}</SelectItem>
                           ))}
                         </SelectContent>
                       </Select>
@@ -579,7 +579,7 @@ Return as JSON:
                           placeholder="Bank accounts, investments, etc."
                         />
                       </div>
-                      <p className="text-xs text-slate-500 mt-1">Don't include your home or one car</p>
+                      <p className="text-xs text-slate-500 mt-1">Don&apos;t include your home or one car</p>
                     </div>
                     <div>
                       <Label>Do you have a disability?</Label>

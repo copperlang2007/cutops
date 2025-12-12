@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Sparkles, FileText, MessageSquare, Loader2, Copy, Check } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
-import { toast } from 'sonner';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from 'react'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
+import { Sparkles, FileText, MessageSquare, Loader2, Copy, Check } from 'lucide-react'
+import { base44 } from '@/api/base44Client'
+import { toast } from 'sonner'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export default function AIMessageAssistant({ messages = [], conversationName, onInsertSummary }) {
   const [summary, setSummary] = useState(null);

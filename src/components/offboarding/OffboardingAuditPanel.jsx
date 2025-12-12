@@ -1,16 +1,15 @@
-import React from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
 import { 
   Shield, AlertTriangle, CheckCircle, XCircle, Clock, 
   RefreshCw, Eye, ChevronDown, ChevronUp 
 } from 'lucide-react';
-import { toast } from 'sonner';
-import { format } from 'date-fns';
+import { toast } from 'sonner'
+import { format } from 'date-fns'
 
 export default function OffboardingAuditPanel({ offboardingId, agentId }) {
   const [expandedAudit, setExpandedAudit] = React.useState(null);

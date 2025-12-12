@@ -1,10 +1,9 @@
-import React from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Shield, CheckCircle, XCircle, AlertTriangle, RefreshCw, Plus, ExternalLink } from "lucide-react";
-import { format, differenceInDays } from "date-fns";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+import { Shield, CheckCircle, XCircle, AlertTriangle, RefreshCw, Plus } from "lucide-react"
+import { format, differenceInDays } from "date-fns"
 
 const statusConfig = {
   active: { label: 'Active', color: 'bg-emerald-100 text-emerald-700', icon: CheckCircle },

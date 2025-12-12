@@ -1,23 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { Progress } from '@/components/ui/progress';
+import { useState, useEffect } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { 
   DollarSign, Sparkles, Loader2, AlertTriangle, CheckCircle,
   FileText, Download, RefreshCw, Send, Clock, Eye, Copy,
   Mail, FileSignature, TrendingDown, ArrowUpCircle, Users,
   Building2, Scale, Zap
 } from 'lucide-react';
-import { format, addDays, differenceInDays } from 'date-fns';
-import { toast } from 'sonner';
-import { motion, AnimatePresence } from 'framer-motion';
+import { format, addDays, differenceInDays } from 'date-fns'
+import { toast } from 'sonner'
+import { motion, AnimatePresence } from 'framer-motion'
 
 // Escalation criteria thresholds
 const ESCALATION_CRITERIA = {

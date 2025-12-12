@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PortalLandingPage from '../components/portal/PortalLandingPage';
 import PortalSignup from '../components/portal/PortalSignup';
 import { motion, AnimatePresence } from 'framer-motion';

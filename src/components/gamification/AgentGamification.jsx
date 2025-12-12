@@ -1,8 +1,8 @@
-import React, { useState, useMemo } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+import { useState, useMemo } from 'react'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
 import { 
   Trophy, Star, Target, Zap, Award, TrendingUp, Gift,
   Medal, Crown, Flame, Users
@@ -25,7 +25,7 @@ const CHALLENGES = [
   { id: 'referral_bonus', name: 'Network Builder', target: 2, unit: 'referrals', reward: 200, timeframe: 'monthly' }
 ];
 
-import { Shield } from 'lucide-react';
+import { Shield } from 'lucide-react'
 
 export default function AgentGamification({ agent, commissions, licenses, policies, checklistItems }) {
   const [selectedTab, setSelectedTab] = useState('badges');

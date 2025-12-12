@@ -1,27 +1,24 @@
-import React, { useState, useMemo } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery } from '@tanstack/react-query';
-import { createPageUrl } from '@/utils';
-import { differenceInDays } from 'date-fns';
+import { useState, useMemo } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery } from '@tanstack/react-query'
 import { 
   Trophy, Medal, TrendingUp, Users, Filter, Sparkles, 
   ChevronUp, ChevronDown, AlertTriangle, CheckCircle, Loader2, Activity, Heart, Zap, Target as TargetIcon
 } from 'lucide-react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Target } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Progress } from '@/components/ui/progress';
-import { motion } from 'framer-motion';
+import { Card, CardContent } from '@/components/ui/card'
+import { Target } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Progress } from '@/components/ui/progress'
+import { motion } from 'framer-motion'
 import LeaderboardAIInsights from '../components/leaderboard/LeaderboardAIInsights';
 import AICoachingSuggestions from '../components/coaching/AICoachingSuggestions';
 import AITrainingGenerator from '../components/training/AITrainingGenerator';
 import AdvancedLeaderboard from '../components/gamification/AdvancedLeaderboard';
 import AchievementSystem from '../components/gamification/AchievementSystem';
 import PointsTracker from '../components/gamification/PointsTracker';
-import { useUserRole } from '../components/shared/RoleGuard';
+import { useUserRole } from '../components/shared/RoleGuard'
 
 const METRICS = [
   { key: 'overall', label: 'Overall Score' },

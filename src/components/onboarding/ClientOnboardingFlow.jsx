@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { Checkbox } from '@/components/ui/checkbox';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQueryClient } from '@tanstack/react-query'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Progress } from '@/components/ui/progress'
+import { Checkbox } from '@/components/ui/checkbox'
 import { 
   Rocket, Mail, Phone, FileText, Heart, Building2, Pill,
   Stethoscope, Star, Users, CheckCircle, Clock, Loader2,
   ChevronRight, Sparkles, Send, Calendar
 } from 'lucide-react';
-import { format, addDays, differenceInDays } from 'date-fns';
-import { toast } from 'sonner';
-import { motion, AnimatePresence } from 'framer-motion';
+import { format, addDays, differenceInDays } from 'date-fns'
+import { toast } from 'sonner'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const ONBOARDING_TEMPLATES = {
   medicare_advantage: {

@@ -1,22 +1,21 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useMutation } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Badge } from '@/components/ui/badge';
-import { Switch } from '@/components/ui/switch';
-import { Progress } from '@/components/ui/progress';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useMutation } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Textarea } from '@/components/ui/textarea'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Badge } from '@/components/ui/badge'
+import { Switch } from '@/components/ui/switch'
 import { 
   Video, Sparkles, Loader2, Play, Clock, Camera,
   Volume2, Music, Type, RefreshCw, Save, Download,
   ChevronDown, ChevronUp, Film
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { toast } from 'sonner';
+import { motion, AnimatePresence } from 'framer-motion'
+import { toast } from 'sonner'
 
 const durations = [
   { value: '6', label: '6 sec', name: 'Bumper Ad' },
@@ -320,7 +319,7 @@ export default function VideoScriptGenerator({ onSave, onGenerateStoryboard }) {
                         </div>
                         <div className="text-left">
                           <p className="font-medium text-slate-800 dark:text-white">Scene {scene.sceneNumber || idx + 1}</p>
-                          <p className="text-xs text-slate-500">{scene.duration}s • {scene.cameraWork || 'Standard shot'}</p>
+                          <p className="text-xs text-slate-500">{scene.duration}s • {scene.cameraWork || &apos;Standard shot&apos;}</p>
                         </div>
                       </div>
                       {expandedScenes[idx] ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}

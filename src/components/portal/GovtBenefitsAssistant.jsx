@@ -1,23 +1,20 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Progress } from '@/components/ui/progress';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Alert, AlertDescription } from '@/components/ui/alert';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Alert, AlertDescription } from '@/components/ui/alert'
 import { 
   HelpCircle, DollarSign, FileText, CheckCircle, Clock, AlertTriangle,
   ArrowRight, Loader2, Calendar, Phone, Mail, Scale, TrendingUp,
   Shield, Heart, Zap, Building2, RefreshCw
 } from 'lucide-react';
-import { format, addDays, differenceInDays } from 'date-fns';
-import { motion, AnimatePresence } from 'framer-motion';
-import { toast } from 'sonner';
+import { format, differenceInDays } from 'date-fns'
+import { motion, AnimatePresence } from 'framer-motion'
+import { toast } from 'sonner'
 
 const benefitPrograms = [
   { 

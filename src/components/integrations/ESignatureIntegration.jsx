@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
-import { base44 } from '@/api/base44Client';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { useState } from 'react'
+import { base44 } from '@/api/base44Client'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { 
   FileSignature, Send, CheckCircle, Clock, AlertTriangle,
   Eye, Download, RefreshCw, Loader2
 } from 'lucide-react';
-import { format } from 'date-fns';
-import { toast } from 'sonner';
+import { format } from 'date-fns'
+import { toast } from 'sonner'
 
 const DOCUMENT_TEMPLATES = [
   { id: 'carrier_contract', name: 'Carrier Contract Agreement', fields: ['agent_name', 'carrier_name', 'effective_date'] },
